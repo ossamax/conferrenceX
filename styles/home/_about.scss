@@ -1,6 +1,6 @@
 .about_conference {
   .wrapper {
-    padding: 5rem 0;
+    padding: 7rem 0;
     @media screen and (min-width: 950px) {
       display: flex;
       justify-content: space-between;
@@ -52,7 +52,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding: 4rem 0 0;
+      padding: 6rem 0 0;
       @media screen and (min-width: 950px) {
         width: 48%;
       }
@@ -82,24 +82,16 @@
         }
       }
       .square:nth-child(1) {
-        @media screen and (min-width: 950px) {
-          transform: translateY(-25px);
-        }
+        transform: translateY(-25px);
       }
       .square:nth-child(2) {
-        @media screen and (min-width: 950px) {
-          transform: translateY(40px);
-        }
+        transform: translateY(40px);
       }
       .square:nth-child(3) {
-        @media screen and (min-width: 950px) {
-          transform: translateY(-25px);
-        }
+        transform: translateY(-25px);
       }
       .square:nth-child(4) {
-        @media screen and (min-width: 950px) {
-          transform: translateY(40px);
-        }
+        transform: translateY(40px);
       }
       .active {
         background-color: $twitchcolor;
