@@ -1,0 +1,32 @@
+.home_sponsors {
+  border-bottom: 0.2px solid rgb(212, 212, 212);
+  .wrapper {
+    text-align: center;
+    padding: 3rem 2rem;
+    @media screen and (min-width: 900px) {
+      padding: 7rem 4rem 3rem;
+    }
+    h4 {
+      color: $headerColor;
+    }
+    .sponsors_wrp {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-top: 1rem;
+      transition: 0.3s ease-in-out;
+      img {
+        width: 100px;
+        margin: 0 0.4rem 0.4rem;
+        transition: 0.3s ease-in-out;
+        @media screen and (min-width: 900px) {
+          width: 130px;
+        }
+      }
+      .pinterest {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

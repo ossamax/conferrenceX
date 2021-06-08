@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap");
 *,
 *::before,
 *::after {
@@ -30,7 +30,7 @@ body {
 }
 .subtitle {
   color: $twitchcolor;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -48,5 +48,5 @@ p {
   color: $paragraphColor;
   font-size: 18px;
   line-height: 1.667em;
-  font-weight: normal;
+  font-weight: 300;
 }
