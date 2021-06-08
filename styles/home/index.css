@@ -33,7 +33,7 @@ body {
 
 button {
   border: none;
-  background-color: none;
+  background-color: transparent;
   outline: none;
   cursor: pointer;
 }
@@ -339,8 +339,8 @@ p {
   background: #0e0749d3;
   z-index: 100;
   opacity: 0;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
   -webkit-transform: translateX(-100rem);
           transform: translateX(-100rem);
 }
@@ -552,7 +552,7 @@ p {
 
 .hero_nav .hero .wrapper .hero_content .btns_wrapper .learn {
   border: 2px solid #181830;
-  color: #686666;
+  color: #4d4c4c;
 }
 
 @media screen and (min-width: 750px) {
