@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//main site colors
+$twitchcolor: #4a3aff;
+$paragraphColor: #6e7191;
+$headerColor: #181830;
+
+//font family
+$Arimo: "Arimo", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: inherit;
+  font-family: $Arimo;
+  background-color: #f6f6f6;
+}
+.wrapper {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+.subtitle {
+  color: $twitchcolor;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background-color: none;
+  outline: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+p {
+  color: $paragraphColor;
+  font-size: 18px;
+  line-height: 1.667em;
+  font-weight: normal;
+}
