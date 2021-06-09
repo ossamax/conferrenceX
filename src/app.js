@@ -1,16 +1,19 @@
 const burgerIcon = document.querySelector(".burger_icon");
 const navLinks = document.querySelector(".nav_links");
 const logoImg = document.querySelector(".logo-img");
+const nav = document.querySelector(".navigation");
 
 burgerIcon.addEventListener("click", () => {
   if (burgerIcon.classList.contains("active")) {
     burgerIcon.classList.remove("active");
     navLinks.classList.remove("active");
     logoImg.src = "images/logo.svg";
+    document.body.style.overflow = "scroll";
   } else {
     burgerIcon.classList.add("active");
     navLinks.classList.add("active");
     logoImg.src = "images/logo-white.svg";
+    document.body.style.overflow = "hidden";
   }
 });
 
@@ -24,7 +27,6 @@ cartOpenBtn.addEventListener("click", () => {
   cart_items.classList.add("active");
   console.log("clicked");
 });
-
 
 function closeCart() {
   cartWrapper.classList.remove("active");

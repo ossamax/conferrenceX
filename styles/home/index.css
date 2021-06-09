@@ -1502,4 +1502,72 @@ p {
   background-color: #575757;
   color: white;
 }
+
+.conference_location {
+  height: 100vh;
+}
+
+.conference_location .wrapper {
+  padding: 5rem 0;
+}
+
+.conference_location .wrapper .location_content {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 550px) {
+  .conference_location .wrapper .location_content {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .conference_location .wrapper .location_content {
+    width: 46%;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.conference_location .wrapper .location_content h1 {
+  margin: 1rem 0;
+  color: #181830;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 950px) {
+  .conference_location .wrapper .location_content h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+}
+
+.conference_location .wrapper .location_content button {
+  width: 100%;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  background-color: #4a3aff;
+  border: 2px solid #181830;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  max-width: 500px;
+  color: white;
+}
+
+.conference_location .wrapper .location_content button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: #505050;
+}
+
+@media screen and (min-width: 850px) {
+  .conference_location .wrapper .location_content button {
+    width: 180px;
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

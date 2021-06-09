@@ -1,0 +1,47 @@
+.conference_location {
+  height: 100vh;
+  .wrapper {
+    padding: 5rem 0;
+    .location_content {
+      transition: 0.3s ease-in-out;
+      @media screen and (min-width: 550px) {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+      }
+      @media screen and (min-width: 950px) {
+        width: 46%;
+        text-align: left;
+        margin: 0;
+      }
+      h1 {
+        margin: 1rem 0;
+        color: $headerColor;
+        max-width: 450px;
+        @media screen and (min-width: 950px) {
+          font-size: 3rem;
+          margin: 2rem 0;
+        }
+      }
+      button {
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+        background-color: $twitchcolor;
+        border: 2px solid $headerColor;
+        font-size: 1rem;
+        transition: 0.4s ease-in-out;
+        max-width: 500px;
+        color: white;
+        &:hover {
+          transform: translateY(-3px);
+          background-color: rgb(80, 80, 80);
+        }
+        @media screen and (min-width: 850px) {
+          width: 180px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
