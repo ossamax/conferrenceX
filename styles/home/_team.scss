@@ -1,0 +1,147 @@
+.meet_team {
+  background-color: #181830;
+  .wrapper {
+    padding: 5rem 0;
+    
+    .team_wrp {
+      padding: 4rem 0;
+      display: grid;
+      row-gap: 40px;
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+      }
+      @media screen and (min-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .cart {
+        background-color: #333354;
+        padding: 1rem;
+        color: white;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+          .Y {
+            transform: translate(8px, 3px);
+            .top {
+              height: 40% !important;
+              width: 3px !important;
+              transform: skew(50deg);
+            }
+            .down {
+              height: 40% !important;
+              transform: skew(-50deg);
+              width: 3px !important;
+            }
+          }
+        }
+        p {
+          color: white;
+        }
+        .persone_img {
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+          margin: 1rem auto;
+          transition: 1s ease-in-out;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .arrow {
+          width: 60px;
+          height: 60px;
+          background-color: $twitchcolor;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+
+          .Y {
+            height: 50%;
+            width: 2px;
+            margin: auto;
+            position: relative;
+            top: 26%;
+            transition: 0.1s ease-in-out;
+
+            .top {
+              height: 50%;
+              width: 100%;
+              background-color: white;
+              transition: 0.1s ease-in-out;
+              position: relative;
+              z-index: 2;
+            }
+            .down {
+              height: 50%;
+              width: 100%;
+              background-color: white;
+              transition: 0.1s ease-in-out;
+              position: relative;
+              z-index: 2;
+            }
+          }
+          .X {
+            width: 50%;
+            height: 2px;
+            margin: auto;
+            background-color: white;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+    }
+    .btns_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem 0;
+      @media screen and (min-width: 900px) {
+        flex-direction: row;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 0;
+        margin: 0.8rem 0;
+        font-size: 1rem;
+        transition: 0.4s ease-in-out;
+        max-width: 500px;
+        &:hover {
+          transform: translateY(-3px);
+        }
+        @media screen and (min-width: 850px) {
+          width: 180px;
+          font-size: 1.2rem;
+        }
+      }
+      .buy {
+        background-color: $twitchcolor;
+        color: white;
+        &:hover {
+          background-color: rgb(87, 87, 87);
+          color: white;
+        }
+      }
+      .speakers {
+        color: #4d4c4c;
+        background-color: white;
+        @media screen and (min-width: 750px) {
+          margin: 0 1rem;
+        }
+        &:hover {
+          background-color: $twitchcolor;
+          color: white;
+        }
+      }
+    }
+  }
+}

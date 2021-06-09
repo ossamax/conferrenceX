@@ -1,0 +1,105 @@
+.attending {
+  background-color: $headerColor;
+  .wrapper {
+    padding: 6rem 0;
+    width: 95%;
+    p {
+      color: rgb(209, 208, 208);
+      padding: 1rem 0;
+    }
+    .header {
+      @media screen and (min-width: 600px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+      }
+      .main_title {
+        @media screen and (min-width: 600px) {
+          text-align: left;
+        }
+      }
+      div {
+        @media screen and (min-width: 600px) {
+          width: 45%;
+        }
+      }
+      .text {
+        text-align: left;
+        P {
+          @media screen and (min-width: 600px) {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .attending_features {
+      display: grid;
+      row-gap: 50px;
+      padding: 4rem 0;
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+      }
+      .card_feature {
+        background-color: #333354;
+        padding: 2rem 1.5rem;
+        color: white;
+        @media screen and (min-width: 600px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2rem;
+        }
+        img {
+          width: 80px;
+          margin-bottom: 1rem;
+          @media screen and (min-width: 600px) {
+            width: 100px;
+          }
+        }
+        div {
+          @media screen and (min-width: 600px) {
+            width: 70%;
+          }
+          h2 {
+            @media screen and (min-width: 600px) {
+              font-size: 2.3rem;
+            }
+          }
+        }
+      }
+    }
+    .cta_btn {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      button {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 0;
+        margin: 0.4rem 0;
+        border: 2px solid $headerColor;
+        font-size: 1rem;
+        transition: 0.4s ease-in-out;
+        max-width: 500px;
+        &:hover {
+          transform: translateY(-3px);
+        }
+        @media screen and (min-width: 850px) {
+          width: 200px;
+          font-size: 1.2rem;
+        }
+      }
+      .buy {
+        background-color: $twitchcolor;
+        color: white;
+        &:hover {
+          background-color: rgb(87, 87, 87);
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -50,6 +50,33 @@ p {
   font-weight: 300;
 }
 
+.header {
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+  }
+}
+
+.header .subtitle {
+  color: #9c93ff;
+}
+
+.header h1 {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+}
+
 .hero_nav {
   overflow-x: hidden;
   position: relative;
@@ -837,5 +864,642 @@ p {
 
 .about_conference .wrapper .about_split_info .active .text {
   color: #c7c7c7 !important;
+}
+
+.meet_team {
+  background-color: #181830;
+}
+
+.meet_team .wrapper {
+  padding: 5rem 0;
+}
+
+.meet_team .wrapper .team_wrp {
+  padding: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .meet_team .wrapper .team_wrp {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .meet_team .wrapper .team_wrp {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.meet_team .wrapper .team_wrp .cart {
+  background-color: #333354;
+  padding: 1rem;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.meet_team .wrapper .team_wrp .cart:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.meet_team .wrapper .team_wrp .cart:hover .Y {
+  -webkit-transform: translate(8px, 3px);
+          transform: translate(8px, 3px);
+}
+
+.meet_team .wrapper .team_wrp .cart:hover .Y .top {
+  height: 40% !important;
+  width: 3px !important;
+  -webkit-transform: skew(50deg);
+          transform: skew(50deg);
+}
+
+.meet_team .wrapper .team_wrp .cart:hover .Y .down {
+  height: 40% !important;
+  -webkit-transform: skew(-50deg);
+          transform: skew(-50deg);
+  width: 3px !important;
+}
+
+.meet_team .wrapper .team_wrp .cart p {
+  color: white;
+}
+
+.meet_team .wrapper .team_wrp .cart .persone_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 1rem auto;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+
+.meet_team .wrapper .team_wrp .cart .persone_img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.meet_team .wrapper .team_wrp .cart .arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #4a3aff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.meet_team .wrapper .team_wrp .cart .arrow .Y {
+  height: 50%;
+  width: 2px;
+  margin: auto;
+  position: relative;
+  top: 26%;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.meet_team .wrapper .team_wrp .cart .arrow .Y .top {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.meet_team .wrapper .team_wrp .cart .arrow .Y .down {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.meet_team .wrapper .team_wrp .cart .arrow .X {
+  width: 50%;
+  height: 2px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.meet_team .wrapper .btns_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .meet_team .wrapper .btns_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.meet_team .wrapper .btns_wrapper button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  max-width: 500px;
+}
+
+.meet_team .wrapper .btns_wrapper button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+@media screen and (min-width: 850px) {
+  .meet_team .wrapper .btns_wrapper button {
+    width: 180px;
+    font-size: 1.2rem;
+  }
+}
+
+.meet_team .wrapper .btns_wrapper .buy {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.meet_team .wrapper .btns_wrapper .buy:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.meet_team .wrapper .btns_wrapper .speakers {
+  color: #4d4c4c;
+  background-color: white;
+}
+
+@media screen and (min-width: 750px) {
+  .meet_team .wrapper .btns_wrapper .speakers {
+    margin: 0 1rem;
+  }
+}
+
+.meet_team .wrapper .btns_wrapper .speakers:hover {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.agenda .wrapper {
+  padding: 8rem 0;
+}
+
+.agenda .wrapper .header .subtitle {
+  color: #4a3aff;
+}
+
+.agenda .wrapper .header h1 {
+  color: #181830;
+}
+
+.agenda .wrapper .agendas_wrp {
+  padding: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem;
+  }
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 1px 1px 10px #f0efef;
+          box-shadow: 1px 1px 10px #f0efef;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session:hover .infos_wrp .cta {
+  color: #4a3aff;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session:hover h2 {
+  color: #4a3aff;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session .infos_wrp {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #181830;
+  font-weight: bold;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp .head .day {
+  background-color: #4a3aff;
+  color: white;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp .head span {
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-bottom: 0.25rem;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp h2 {
+  color: #181830;
+  margin: 1rem 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp P {
+  padding-bottom: 1rem;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: dimgray;
+  position: relative;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .infos_wrp .cta svg {
+  margin-right: 0.6rem;
+  font-size: 2.2rem;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e7e6e6;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session .line {
+    height: 90%;
+    width: 1px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0 2rem;
+  }
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .speaker_info {
+  padding: 2rem 0 0;
+  color: #181830;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session .speaker_info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .speaker_info .img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session .speaker_info .img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .speaker_info .img img {
+  width: 100%;
+}
+
+.agenda .wrapper .agendas_wrp .agenda_session .speaker_info span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 780px) {
+  .agenda .wrapper .agendas_wrp .agenda_session .speaker_info span {
+    padding: 1rem 0;
+  }
+}
+
+.agenda .wrapper .cta_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .agenda .wrapper .cta_btns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.agenda .wrapper .cta_btns button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 0.4rem 0;
+  border: 2px solid #181830;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  max-width: 500px;
+}
+
+.agenda .wrapper .cta_btns button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+@media screen and (min-width: 850px) {
+  .agenda .wrapper .cta_btns button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
+
+.agenda .wrapper .cta_btns .buy {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.agenda .wrapper .cta_btns .buy:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.agenda .wrapper .cta_btns .learn {
+  border: 2px solid #181830;
+  color: #4d4c4c;
+}
+
+@media screen and (min-width: 750px) {
+  .agenda .wrapper .cta_btns .learn {
+    margin: 0 1rem;
+  }
+}
+
+.agenda .wrapper .cta_btns .learn:hover {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.attending {
+  background-color: #181830;
+}
+
+.attending .wrapper {
+  padding: 6rem 0;
+  width: 95%;
+}
+
+.attending .wrapper p {
+  color: #d1d0d0;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .header .main_title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .header div {
+    width: 45%;
+  }
+}
+
+.attending .wrapper .header .text {
+  text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .header .text P {
+    padding: 0;
+  }
+}
+
+.attending .wrapper .attending_features {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .attending_features {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+.attending .wrapper .attending_features .card_feature {
+  background-color: #333354;
+  padding: 2rem 1.5rem;
+  color: white;
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .attending_features .card_feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+}
+
+.attending .wrapper .attending_features .card_feature img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .attending_features .card_feature img {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .attending_features .card_feature div {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .attending .wrapper .attending_features .card_feature div h2 {
+    font-size: 2.3rem;
+  }
+}
+
+.attending .wrapper .cta_btn {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attending .wrapper .cta_btn button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 0.4rem 0;
+  border: 2px solid #181830;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  max-width: 500px;
+}
+
+.attending .wrapper .cta_btn button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+@media screen and (min-width: 850px) {
+  .attending .wrapper .cta_btn button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
+
+.attending .wrapper .cta_btn .buy {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.attending .wrapper .cta_btn .buy:hover {
+  background-color: #575757;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

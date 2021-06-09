@@ -1,0 +1,179 @@
+.agenda {
+  .wrapper {
+    padding: 8rem 0;
+    .header {
+      .subtitle {
+        color: $twitchcolor;
+      }
+      h1 {
+        color: $headerColor;
+      }
+    }
+    .agendas_wrp {
+      padding: 4rem 0;
+      display: grid;
+      row-gap: 50px;
+      max-width: 950px;
+      margin: auto;
+      .agenda_session {
+        background-color: white;
+        padding: 2rem 1.5rem;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        @media screen and (min-width: 780px) {
+          display: flex;
+          align-items: center;
+          padding: 3rem;
+        }
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 1px 1px 10px rgb(240, 239, 239);
+          .infos_wrp {
+            .cta {
+              color: $twitchcolor;
+            }
+          }
+          h2 {
+            color: $twitchcolor;
+          }
+        }
+        .infos_wrp {
+          margin-bottom: 2rem;
+          @media screen and (min-width: 780px) {
+            order: 3;
+          }
+          .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #181830;
+            font-weight: bold;
+            .day {
+              background-color: $twitchcolor;
+              color: white;
+              padding: 0.7rem 0.8rem;
+              font-size: 0.9rem;
+            }
+            span {
+              display: inline-block;
+              width: 15px;
+              height: 1px;
+              background-color: rgb(224, 224, 224);
+              margin-bottom: 0.25rem;
+            }
+          }
+          h2 {
+            color: $headerColor;
+            margin: 1rem 0;
+            transition: 0.3s ease-in-out;
+          }
+          P {
+            padding-bottom: 1rem;
+          }
+          .cta {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(105, 105, 105);
+            position: relative;
+
+            svg {
+              margin-right: 0.6rem;
+              font-size: 2.2rem;
+            }
+          }
+        }
+        .line {
+          width: 100%;
+          height: 1px;
+          background-color: rgb(231, 230, 230);
+          @media screen and (min-width: 780px) {
+            height: 90%;
+            width: 1px;
+            order: 2;
+            margin: 0 2rem;
+          }
+        }
+        .speaker_info {
+          padding: 2rem 0 0;
+          color: $headerColor;
+          display: flex;
+          align-items: center;
+          @media screen and (min-width: 780px) {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+          }
+          .img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            overflow: hidden;
+            @media screen and (min-width: 780px) {
+              width: 150px;
+              height: 150px;
+            }
+            img {
+              width: 100%;
+            }
+          }
+          span {
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            @media screen and (min-width: 780px) {
+              padding: 1rem 0;
+            }
+          }
+        }
+      }
+    }
+    .cta_btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem 0;
+      @media screen and (min-width: 900px) {
+        flex-direction: row;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 1.5rem 0;
+        margin: 0.4rem 0;
+        border: 2px solid $headerColor;
+        font-size: 1rem;
+        transition: 0.4s ease-in-out;
+        max-width: 500px;
+        &:hover {
+          transform: translateY(-3px);
+        }
+        @media screen and (min-width: 850px) {
+          width: 200px;
+          font-size: 1.2rem;
+        }
+      }
+      .buy {
+        background-color: $twitchcolor;
+        color: white;
+        &:hover {
+          background-color: rgb(87, 87, 87);
+          color: white;
+        }
+      }
+      .learn {
+        border: 2px solid $headerColor;
+        color: #4d4c4c;
+        @media screen and (min-width: 750px) {
+          margin: 0 1rem;
+        }
+        &:hover {
+          background-color: $twitchcolor;
+          color: white;
+        }
+      }
+    }
+  }
+}
