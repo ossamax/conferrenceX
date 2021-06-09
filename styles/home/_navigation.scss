@@ -198,6 +198,7 @@
           transform: translateX(200rem);
           transition: 1s ease-in-out;
           opacity: 0;
+
           @media screen and (min-width: 700px) {
             float: right;
             width: 500px;
@@ -208,6 +209,7 @@
             align-items: center;
             padding: 1.4rem 2rem;
             border-bottom: 0.2px solid rgb(233, 233, 233);
+            color: $headerColor;
             .yr_cart {
               font-size: 1.3rem;
             }
@@ -215,6 +217,9 @@
               font-size: 2rem;
               cursor: pointer;
               transition: 0.3s ease-in-out;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
           }
           .item_wrapper {

@@ -25,7 +25,6 @@ const cart_items = document.querySelector(".cart_items");
 cartOpenBtn.addEventListener("click", () => {
   cartWrapper.classList.add("active");
   cart_items.classList.add("active");
-  console.log("clicked");
 });
 
 function closeCart() {
