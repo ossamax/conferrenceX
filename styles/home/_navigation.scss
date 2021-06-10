@@ -198,7 +198,6 @@
           transform: translateX(200rem);
           transition: 1s ease-in-out;
           opacity: 0;
-
           @media screen and (min-width: 700px) {
             float: right;
             width: 500px;
@@ -210,6 +209,7 @@
             padding: 1.4rem 2rem;
             border-bottom: 0.2px solid rgb(233, 233, 233);
             color: $headerColor;
+            width: 100%;
             .yr_cart {
               font-size: 1.3rem;
             }
@@ -335,6 +335,7 @@
           .learn {
             border: 2px solid $headerColor;
             color: #4d4c4c;
+            background-color: white;
             @media screen and (min-width: 750px) {
               margin: 0 1rem;
             }

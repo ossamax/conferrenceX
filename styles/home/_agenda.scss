@@ -36,6 +36,11 @@
           h2 {
             color: $twitchcolor;
           }
+          .img {
+            img {
+              transform: scale(1.1);
+            }
+          }
         }
         .infos_wrp {
           margin-bottom: 2rem;
@@ -116,6 +121,7 @@
             }
             img {
               width: 100%;
+              transition: 0.3s ease-in-out;
             }
           }
           span {

@@ -408,6 +408,7 @@ p {
   padding: 1.4rem 2rem;
   border-bottom: 0.2px solid #e9e9e9;
   color: #181830;
+  width: 100%;
 }
 
 .hero_nav nav .wrapper .cart_items_wrapper .cart_items .header .yr_cart {
@@ -609,6 +610,7 @@ p {
 .hero_nav .hero .wrapper .hero_content .btns_wrapper .learn {
   border: 2px solid #181830;
   color: #4d4c4c;
+  background-color: white;
 }
 
 @media screen and (min-width: 750px) {
@@ -1139,6 +1141,11 @@ p {
   color: #4a3aff;
 }
 
+.agenda .wrapper .agendas_wrp .agenda_session:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .agenda .wrapper .agendas_wrp .agenda_session .infos_wrp {
   margin-bottom: 2rem;
 }
@@ -1268,6 +1275,8 @@ p {
 
 .agenda .wrapper .agendas_wrp .agenda_session .speaker_info .img img {
   width: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .agenda .wrapper .agendas_wrp .agenda_session .speaker_info span {
@@ -1513,12 +1522,23 @@ p {
   color: white;
 }
 
-.conference_location {
-  height: 100vh;
-}
-
 .conference_location .wrapper {
   padding: 5rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .conference_location .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 7rem 0;
+  }
 }
 
 .conference_location .wrapper .location_content {
@@ -1529,14 +1549,16 @@ p {
 @media screen and (min-width: 550px) {
   .conference_location .wrapper .location_content {
     text-align: center;
-    max-width: 500px;
     margin: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 700px) {
   .conference_location .wrapper .location_content {
-    width: 46%;
+    width: 48%;
     text-align: left;
     margin: 0;
   }
@@ -1545,7 +1567,6 @@ p {
 .conference_location .wrapper .location_content h1 {
   margin: 1rem 0;
   color: #181830;
-  max-width: 450px;
 }
 
 @media screen and (min-width: 950px) {
@@ -1579,5 +1600,362 @@ p {
     width: 180px;
     font-size: 1.2rem;
   }
+}
+
+.conference_location .wrapper .conference_revenu {
+  height: 500px;
+  background-image: url("../../images/confrence_venu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 950px) {
+  .conference_location .wrapper .conference_revenu {
+    width: 46%;
+    height: 650px;
+    margin-top: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.conference_location .wrapper .conference_revenu .location_info {
+  width: 90%;
+  margin: 2rem auto;
+  height: 200px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .conference_location .wrapper .conference_revenu .location_info {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .conference_location .wrapper .conference_revenu .location_info h3 {
+    font-size: 2rem;
+  }
+}
+
+.conference_location .wrapper .conference_revenu .location_info p {
+  margin: 1rem 0;
+}
+
+.conference_location .wrapper .conference_revenu .location_info div {
+  width: 110px;
+  border-bottom: 1px solid #181830;
+  padding: 0.3rem 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.conference_location .wrapper .conference_revenu .location_info div:hover {
+  color: #4a3aff;
+  border-color: #4a3aff;
+}
+
+.watch_v_conference {
+  background-color: #181830;
+}
+
+.watch_v_conference .wrapper {
+  padding: 5rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .watch_v_conference .wrapper .header {
+    max-width: 700px;
+  }
+}
+
+.watch_v_conference .wrapper .video_conference {
+  margin: 3rem 0;
+}
+
+.watch_v_conference .wrapper .video_conference .years_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-color: #333354;
+  max-width: 380px;
+  margin: auto;
+}
+
+.watch_v_conference .wrapper .video_conference .years_wrapper div {
+  padding: 1.3rem 2.3rem;
+  color: #6e7191;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.watch_v_conference .wrapper .video_conference .years_wrapper div:hover {
+  color: #4a3aff;
+}
+
+.watch_v_conference .wrapper .video_conference .years_wrapper .active {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.watch_v_conference .wrapper .video_conference .years_wrapper .active:hover {
+  color: white !important;
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper {
+  margin: 2rem 0;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.726);
+          box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.726);
+}
+
+@media screen and (min-width: 600px) {
+  .watch_v_conference .wrapper .video_conference .video_wrapper {
+    height: 600px;
+  }
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper .video_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #18183081;
+  z-index: 1;
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper .play_btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper .play_btn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.watch_v_conference .wrapper .video_conference .video_wrapper .play_btn img {
+  width: 30px;
+}
+
+.watch_v_conference .wrapper .video_conference .cta_btn {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.watch_v_conference .wrapper .video_conference .cta_btn button {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin: 0.4rem 0;
+  border: 2px solid #181830;
+  font-size: 1rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  max-width: 500px;
+}
+
+.watch_v_conference .wrapper .video_conference .cta_btn button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+@media screen and (min-width: 850px) {
+  .watch_v_conference .wrapper .video_conference .cta_btn button {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
+
+.watch_v_conference .wrapper .video_conference .cta_btn .buy {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.watch_v_conference .wrapper .video_conference .cta_btn .buy:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.blog {
+  height: 100vh;
+}
+
+.blog .wrapper {
+  padding: 5rem 0;
+}
+
+.blog .wrapper .blog_header {
+  text-align: center;
+}
+
+.blog .wrapper .blog_header h1 {
+  margin: 0.5rem 0;
+}
+
+.blog .wrapper .blog_header .cta_btn {
+  margin-top: 2rem;
+}
+
+.blog .wrapper .blog_header .cta_btn button {
+  width: 100%;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  color: #181830;
+  border: 2px solid #181830;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog .wrapper .blog_header .cta_btn button:hover {
+  background-color: #4a3aff;
+  color: white;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.blog .wrapper .blogs_wrp {
+  padding: 6rem 0 0;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 40px;
+}
+
+.blog .wrapper .blogs_wrp .article {
+  cursor: pointer;
+}
+
+.blog .wrapper .blogs_wrp .article:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog .wrapper .blogs_wrp .article:hover h2,
+.blog .wrapper .blogs_wrp .article:hover .read_more {
+  color: #4a3aff;
+}
+
+.blog .wrapper .blogs_wrp .article .article_img {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog .wrapper .blogs_wrp .article .article_img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog .wrapper .blogs_wrp .article .date {
+  color: #4a3aff;
+  margin: 1rem 0;
+}
+
+.blog .wrapper .blogs_wrp .article h2 {
+  margin: 1rem 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #181830;
+}
+
+.blog .wrapper .blogs_wrp .article .read_more {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: #181830;
+}
+
+.blog .wrapper .blogs_wrp .article .read_more svg {
+  font-size: 2rem;
+  margin-right: 0.3rem;
 }
 /*# sourceMappingURL=index.css.map */
