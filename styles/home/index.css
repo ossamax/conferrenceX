@@ -1867,6 +1867,8 @@ p {
 
 .blog .wrapper .blog_header .cta_btn {
   margin-top: 2rem;
+  max-width: 250px;
+  margin: 2rem auto;
 }
 
 .blog .wrapper .blog_header .cta_btn button {
@@ -1891,7 +1893,7 @@ p {
   padding: 6rem 0 0;
   display: -ms-grid;
   display: grid;
-  row-gap: 40px;
+  row-gap: 50px;
 }
 
 .blog .wrapper .blogs_wrp .article {
@@ -1939,6 +1941,7 @@ p {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: #181830;
+  font-weight: 500;
 }
 
 .blog .wrapper .blogs_wrp .article .read_more {
@@ -1952,10 +1955,11 @@ p {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: #181830;
+  margin: 1rem 0;
 }
 
 .blog .wrapper .blogs_wrp .article .read_more svg {
-  font-size: 2rem;
-  margin-right: 0.3rem;
+  font-size: 2.2rem;
+  margin-right: 0.4rem;
 }
 /*# sourceMappingURL=index.css.map */

@@ -9,6 +9,8 @@
       }
       .cta_btn {
         margin-top: 2rem;
+        max-width: 250px;
+        margin: 2rem auto;
         button {
           width: 100%;
           background-color: white;
@@ -28,7 +30,7 @@
     .blogs_wrp {
       padding: 6rem 0 0;
       display: grid;
-      row-gap: 40px;
+      row-gap: 50px;
       .article {
         cursor: pointer;
         &:hover {
@@ -61,6 +63,7 @@
           margin: 1rem 0;
           transition: 0.3s ease-in-out;
           color: #181830;
+          font-weight: 500;
         }
         .read_more {
           font-size: 1rem;
@@ -68,9 +71,10 @@
           align-items: center;
           transition: 0.3s ease-in-out;
           color: #181830;
+          margin: 1rem 0;
           svg {
-            font-size: 2rem;
-            margin-right: 0.3rem;
+            font-size: 2.2rem;
+            margin-right: 0.4rem;
           }
         }
       }
