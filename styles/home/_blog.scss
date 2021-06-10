@@ -4,13 +4,29 @@
     padding: 5rem 0;
     .blog_header {
       text-align: center;
+      @media screen and (min-width: 600px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      .main_title {
+        @media screen and (min-width: 600px) {
+          text-align: left;
+        }
+      }
       h1 {
         margin: 0.5rem 0;
+        @media screen and (min-width: 600px) {
+          font-size: 2.5rem;
+        }
       }
       .cta_btn {
         margin-top: 2rem;
         max-width: 250px;
         margin: 2rem auto;
+        @media screen and (min-width: 600px) {
+          margin: 0;
+        }
         button {
           width: 100%;
           background-color: white;
@@ -31,6 +47,14 @@
       padding: 6rem 0 0;
       display: grid;
       row-gap: 50px;
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+      }
+      @media screen and (min-width: 900px) {
+        padding: 4rem 0 0;
+        grid-template-columns: repeat(3, 1fr);
+      }
       .article {
         cursor: pointer;
         &:hover {
