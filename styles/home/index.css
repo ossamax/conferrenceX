@@ -2203,6 +2203,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (min-width: 600px) {
@@ -2224,6 +2230,7 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   color: #181830;
+  padding-right: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {

@@ -34,6 +34,8 @@
           }
           .question_wrp {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
             @media screen and (min-width: 600px) {
               display: flex;
               justify-content: space-between;
@@ -44,6 +46,7 @@
               font-size: 1.2rem;
               font-weight: 600;
               color: #181830;
+              padding-right: 0.5rem;
               @media screen and (min-width: 600px) {
                 font-size: 1.5rem;
               }
