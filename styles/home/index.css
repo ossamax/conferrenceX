@@ -2291,8 +2291,10 @@ p {
           animation: fade 0.3s ease-in-out forwards;
 }
 
-.faqs .wrapper .qst_wrapper details[open] summary {
-  padding-bottom: 0;
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details[open] summary {
+    padding-bottom: 0;
+  }
 }
 
 .faqs .wrapper .qst_wrapper details[open] summary .question_wrp .icon {
