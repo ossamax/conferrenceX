@@ -2139,4 +2139,190 @@ p {
   margin: 1rem 0;
   font-size: 1.1rem;
 }
+
+.faqs {
+  height: 100vh;
+}
+
+.faqs .wrapper {
+  padding: 5rem 0;
+}
+
+.faqs .wrapper .header {
+  color: #181830;
+  width: 100%;
+}
+
+.faqs .wrapper .qst_wrapper {
+  padding: 4rem 0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.faqs .wrapper .qst_wrapper details {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-color: white;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.faqs .wrapper .qst_wrapper details summary {
+  padding: 2rem 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 4rem;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details summary .number {
+  color: #4a3aff;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details summary .number {
+    font-size: 3rem;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details summary .question_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details summary .question_wrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details summary .question_wrp .qst {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #181830;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details summary .question_wrp .qst {
+    font-size: 1.5rem;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details summary .question_wrp .icon {
+  background-color: #e6e7eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  padding: 0.4rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details summary .question_wrp .icon {
+    padding: 0.5rem;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details summary .question_wrp .icon svg {
+  font-size: 1.9rem;
+  color: #6e7191;
+}
+
+.faqs .wrapper .qst_wrapper details .content {
+  font-size: 1.2rem;
+  padding: 0 3rem 2.5rem 1rem;
+  line-height: 1.5;
+  color: #6e7191;
+}
+
+@media screen and (min-width: 600px) {
+  .faqs .wrapper .qst_wrapper details .content {
+    padding: 0 4rem 2rem;
+    width: 74%;
+    margin: auto;
+  }
+}
+
+.faqs .wrapper .qst_wrapper details:nth-child(5) {
+  border-bottom: none;
+}
+
+.faqs .wrapper .qst_wrapper details[open] summary ~ * {
+  -webkit-animation: fade 0.3s ease-in-out forwards;
+          animation: fade 0.3s ease-in-out forwards;
+}
+
+.faqs .wrapper .qst_wrapper details[open] summary {
+  padding-bottom: 0;
+}
+
+.faqs .wrapper .qst_wrapper details[open] summary .question_wrp .icon {
+  background-color: #4a3aff;
+}
+
+.faqs .wrapper .qst_wrapper details[open] summary .question_wrp .icon svg {
+  color: white;
+}
+
+.faqs .wrapper .qst_wrapper details > summary {
+  list-style: none;
+}
+
+.faqs .wrapper .qst_wrapper details > summary::marker {
+  display: none;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=index.css.map */

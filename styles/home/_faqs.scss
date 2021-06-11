@@ -1,0 +1,118 @@
+.faqs {
+  height: 100vh;
+  .wrapper {
+    padding: 5rem 0;
+    .header {
+      color: $headerColor;
+      width: 100%;
+    }
+    .qst_wrapper {
+      padding: 4rem 0;
+      max-width: 1000px;
+      margin: auto;
+      details {
+        transition: 1s ease-in-out;
+        background-color: white;
+        border-bottom: 1px solid rgb(223, 223, 223);
+        summary {
+          padding: 2rem 1rem;
+          cursor: pointer;
+          @media screen and (min-width: 600px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 4rem;
+          }
+          .number {
+            color: $twitchcolor;
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 600px) {
+              font-size: 3rem;
+            }
+          }
+          .question_wrp {
+            display: flex;
+            @media screen and (min-width: 600px) {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 85%;
+            }
+            .qst {
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: #181830;
+              @media screen and (min-width: 600px) {
+                font-size: 1.5rem;
+              }
+            }
+            .icon {
+              background-color: #e6e7eb;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 100%;
+              padding: 0.4rem;
+              transition: 0.3s ease-in-out;
+              @media screen and (min-width: 600px) {
+                padding: 0.5rem;
+              }
+              svg {
+                font-size: 1.9rem;
+                color: #6e7191;
+              }
+            }
+          }
+        }
+
+        .content {
+          font-size: 1.2rem;
+          padding: 0 3rem 2.5rem 1rem;
+          line-height: 1.5;
+          color: $paragraphColor;
+          @media screen and (min-width: 600px) {
+            padding: 0 4rem 2rem;
+            width: 74%;
+            margin: auto;
+          }
+        }
+      }
+      details:nth-child(5) {
+        border-bottom: none;
+      }
+      details[open] summary ~ * {
+        animation: fade 0.3s ease-in-out forwards;
+      }
+      details[open] summary {
+        padding-bottom: 0;
+        .question_wrp {
+          .icon {
+            background-color: $twitchcolor;
+            svg {
+              color: white;
+            }
+          }
+        }
+      }
+      details > summary {
+        list-style: none;
+      }
+      details > summary::marker {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
