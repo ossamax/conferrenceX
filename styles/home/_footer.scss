@@ -1,0 +1,174 @@
+footer {
+  background-color: $headerColor;
+  margin-top: 4rem;
+  .wrapper {
+    padding: 5rem 0 1rem;
+    .header {
+      border-bottom: 1.2px solid rgb(172, 170, 170);
+      max-height: 380px;
+      width: 100%;
+      @media screen and (min-width: 700px) {
+        height: 250px;
+      }
+      .poster {
+        background-color: $twitchcolor;
+        color: white;
+        padding: 3rem 1.3rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        top: -10rem;
+        @media screen and (min-width: 700px) {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          text-align: left;
+          padding: 3rem 4rem;
+        }
+        img {
+          position: absolute;
+        }
+        .shape-1 {
+          top: -3rem;
+          left: -2rem;
+          width: 200px;
+        }
+        .shape-2 {
+          bottom: -2rem;
+          left: -2rem;
+          width: 130px;
+        }
+        .shape-3 {
+          top: -1rem;
+          right: -1rem;
+          width: 90px;
+        }
+        .shape-4 {
+          bottom: -1rem;
+          right: 0rem;
+          width: 100px;
+        }
+        .text {
+          font-size: 1.3rem;
+          font-weight: bold;
+          line-height: 1.5;
+          @media screen and (min-width: 700px) {
+            max-width: 400px;
+            font-size: 2rem;
+          }
+        }
+        .cta_btn {
+          margin-top: 1rem;
+
+          button {
+            width: 100%;
+            padding: 1.3rem;
+            border: 2px solid $headerColor;
+            background-color: white;
+            color: $twitchcolor;
+            font-size: 1.2rem;
+            transition: 0.3s ease-in-out;
+            @media screen and (min-width: 700px) {
+              width: 200px;
+            }
+            &:hover {
+              background-color: $twitchcolor;
+              color: white;
+              transform: translateY(-3px);
+            }
+          }
+        }
+      }
+      .logo_text {
+        color: white;
+        position: relative;
+        top: -6rem;
+        text-align: center;
+        @media screen and (min-width: 700px) {
+          display: flex;
+          justify-content: space-between;
+          text-align: left;
+        }
+        img {
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            transform: scale(0.9);
+          }
+        }
+
+        P {
+          margin: 1rem 0;
+          color: white;
+          max-width: 500px;
+        }
+      }
+    }
+    .pages_contact {
+      padding: 2rem 0 0;
+      @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+      .pages {
+        color: white;
+        border-bottom: 1.2px solid rgb(172, 170, 170);
+        padding-bottom: 2rem;
+        .link {
+          display: flex;
+          flex-direction: column;
+          a {
+            color: rgb(235, 232, 232);
+            margin: 0.8rem 0;
+            display: inline;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              color: rgb(123, 125, 248);
+            }
+          }
+        }
+      }
+      .contact {
+        color: white;
+        border-bottom: 1.2px solid rgb(172, 170, 170);
+        padding: 2rem 0;
+        .emails {
+          display: flex;
+          flex-direction: column;
+          div {
+            color: rgb(235, 232, 232);
+            margin: 0.8rem 0;
+            display: inline;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              color: rgb(123, 125, 248);
+            }
+          }
+        }
+        .social_media_links {
+          padding: 1rem 0;
+          svg {
+            font-size: 1.7rem;
+            cursor: pointer;
+            margin: 0 0.4rem;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              color: rgb(123, 125, 248);
+            }
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+}

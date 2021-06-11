@@ -2140,10 +2140,6 @@ p {
   font-size: 1.1rem;
 }
 
-.faqs {
-  height: 100vh;
-}
-
 .faqs .wrapper {
   padding: 5rem 0;
 }
@@ -2333,5 +2329,258 @@ p {
     opacity: 1;
     margin-top: 0;
   }
+}
+
+footer {
+  background-color: #181830;
+  margin-top: 4rem;
+}
+
+footer .wrapper {
+  padding: 5rem 0 1rem;
+}
+
+footer .wrapper .header {
+  border-bottom: 1.2px solid #acaaaa;
+  max-height: 380px;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .header {
+    height: 250px;
+  }
+}
+
+footer .wrapper .header .poster {
+  background-color: #4a3aff;
+  color: white;
+  padding: 3rem 1.3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  top: -10rem;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .header .poster {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: left;
+    padding: 3rem 4rem;
+  }
+}
+
+footer .wrapper .header .poster img {
+  position: absolute;
+}
+
+footer .wrapper .header .poster .shape-1 {
+  top: -3rem;
+  left: -2rem;
+  width: 200px;
+}
+
+footer .wrapper .header .poster .shape-2 {
+  bottom: -2rem;
+  left: -2rem;
+  width: 130px;
+}
+
+footer .wrapper .header .poster .shape-3 {
+  top: -1rem;
+  right: -1rem;
+  width: 90px;
+}
+
+footer .wrapper .header .poster .shape-4 {
+  bottom: -1rem;
+  right: 0rem;
+  width: 100px;
+}
+
+footer .wrapper .header .poster .text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .header .poster .text {
+    max-width: 400px;
+    font-size: 2rem;
+  }
+}
+
+footer .wrapper .header .poster .cta_btn {
+  margin-top: 1rem;
+}
+
+footer .wrapper .header .poster .cta_btn button {
+  width: 100%;
+  padding: 1.3rem;
+  border: 2px solid #181830;
+  background-color: white;
+  color: #4a3aff;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .header .poster .cta_btn button {
+    width: 200px;
+  }
+}
+
+footer .wrapper .header .poster .cta_btn button:hover {
+  background-color: #4a3aff;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+footer .wrapper .header .logo_text {
+  color: white;
+  position: relative;
+  top: -6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .header .logo_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+}
+
+footer .wrapper .header .logo_text img {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .wrapper .header .logo_text img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+footer .wrapper .header .logo_text P {
+  margin: 1rem 0;
+  color: white;
+  max-width: 500px;
+}
+
+footer .wrapper .pages_contact {
+  padding: 2rem 0 0;
+}
+
+@media screen and (min-width: 700px) {
+  footer .wrapper .pages_contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer .wrapper .pages_contact h2 {
+  margin-bottom: 0.5rem;
+}
+
+footer .wrapper .pages_contact .pages {
+  color: white;
+  border-bottom: 1.2px solid #acaaaa;
+  padding-bottom: 2rem;
+}
+
+footer .wrapper .pages_contact .pages .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .wrapper .pages_contact .pages .link a {
+  color: #ebe8e8;
+  margin: 0.8rem 0;
+  display: inline;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .wrapper .pages_contact .pages .link a:hover {
+  color: #7b7df8;
+}
+
+footer .wrapper .pages_contact .contact {
+  color: white;
+  border-bottom: 1.2px solid #acaaaa;
+  padding: 2rem 0;
+}
+
+footer .wrapper .pages_contact .contact .emails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .wrapper .pages_contact .contact .emails div {
+  color: #ebe8e8;
+  margin: 0.8rem 0;
+  display: inline;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+footer .wrapper .pages_contact .contact .emails div:hover {
+  color: #7b7df8;
+}
+
+footer .wrapper .pages_contact .contact .social_media_links {
+  padding: 1rem 0;
+}
+
+footer .wrapper .pages_contact .contact .social_media_links svg {
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 0 0.4rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .wrapper .pages_contact .contact .social_media_links svg:hover {
+  color: #7b7df8;
+}
+
+footer .copyright {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem 0;
 }
 /*# sourceMappingURL=index.css.map */
