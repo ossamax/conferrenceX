@@ -1,0 +1,80 @@
+.testimonials {
+  background-color: $headerColor;
+  .wrapper {
+    padding: 5rem 0;
+    @media screen and (min-width: 600px) {
+      padding: 8rem 0;
+    }
+    .testimonials_header {
+      color: white;
+      @media screen and (min-width: 600px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      h1 {
+        margin: 1rem 0;
+        max-width: 400px;
+      }
+      .cta_btn {
+        margin-top: 2rem;
+        margin: 2rem auto;
+        @media screen and (min-width: 600px) {
+          margin: 0;
+          max-width: 250px;
+        }
+        button {
+          width: 100%;
+          background-color: $twitchcolor;
+          padding: 1.5rem 2rem;
+          color: white;
+          border: 2px solid #181830;
+          font-size: 1.2rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: $twitchcolor;
+            color: white;
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+    .cards_wrp {
+      display: grid;
+      row-gap: 40px;
+      padding: 3rem 0;
+      @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+      }
+      @media screen and (min-width: 900px) {
+        padding: 4rem 0 0;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .card {
+        background-color: #333354;
+        padding: 1.5rem;
+        .persone_info {
+          img {
+            width: 70px;
+            border-radius: 100%;
+            margin-bottom: 0.5rem;
+          }
+          h3 {
+            color: white;
+          }
+          p {
+            color: #a0a3bd;
+            font-size: 0.95rem;
+          }
+        }
+        .quote {
+          color: rgb(230, 228, 228);
+          line-height: 1.5;
+          margin: 1rem 0;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

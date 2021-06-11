@@ -1,7 +1,9 @@
 .blog {
-  height: 100vh;
   .wrapper {
     padding: 5rem 0;
+    @media screen and (min-width: 600px) {
+      padding: 10rem 0;
+    }
     .blog_header {
       text-align: center;
       @media screen and (min-width: 600px) {
