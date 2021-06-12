@@ -4,11 +4,12 @@ footer {
   .wrapper {
     padding: 5rem 0 1rem;
     .header {
-      border-bottom: 1.2px solid rgb(172, 170, 170);
       max-height: 380px;
       width: 100%;
       @media screen and (min-width: 700px) {
+        border-bottom: 1.2px solid rgb(172, 170, 170);
         height: 250px;
+        border: none;
       }
       .poster {
         background-color: $twitchcolor;
@@ -109,15 +110,15 @@ footer {
       @media screen and (min-width: 700px) {
         display: flex;
         justify-content: space-around;
-        align-items: center;
       }
       h2 {
         margin-bottom: 0.5rem;
       }
       .pages {
         color: white;
-        border-bottom: 1.2px solid rgb(172, 170, 170);
-        padding-bottom: 2rem;
+        border-top: 1.2px solid rgb(172, 170, 170);
+        padding: 2rem 0;
+
         .link {
           display: flex;
           flex-direction: column;
@@ -134,7 +135,7 @@ footer {
       }
       .contact {
         color: white;
-        border-bottom: 1.2px solid rgb(172, 170, 170);
+        border-top: 1.2px solid rgb(172, 170, 170);
         padding: 2rem 0;
         .emails {
           display: flex;
@@ -170,5 +171,8 @@ footer {
     font-size: 0.9rem;
     text-align: center;
     padding: 2rem 0;
+    border-top: 0.5px solid rgba(187, 187, 187, 0.37);
+    max-width: 90%;
+    margin: auto;
   }
 }

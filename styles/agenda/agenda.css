@@ -1,0 +1,131 @@
+.hero_nav {
+  background-color: #181830;
+}
+
+.hero_nav::before {
+  content: none;
+}
+
+.hero_nav .navigation .wrapper .cart_icon .iconify {
+  color: white;
+}
+
+.hero_nav .navigation .wrapper .cart_icon .total_items {
+  background-color: white !important;
+  color: #4a3aff !important;
+  font-weight: bold;
+}
+
+.hero_nav .hero {
+  height: 400px;
+  max-height: 500px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero_nav .hero h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+.hero_nav .hero p {
+  color: #dadade;
+  padding: 0 1rem;
+}
+
+.section_agenda .wrapper .header_btns {
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section_agenda .wrapper .header_btns button {
+  width: 160px;
+  padding: 1.3rem 0;
+  background-color: white;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  color: #181830;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.section_agenda .wrapper .header_btns button:hover {
+  color: #4a3aff;
+}
+
+.section_agenda .wrapper .header_btns button.active {
+  background-color: #4a3aff;
+  color: white;
+}
+
+.section_agenda .wrapper .header_btns button.active:hover {
+  color: white;
+}
+
+.section_agenda .agenda .wrapper {
+  padding: 0;
+  display: none;
+  opacity: 0;
+}
+
+.section_agenda .agenda .wrapper .header_agenda {
+  text-align: center;
+}
+
+.section_agenda .agenda .wrapper .header_agenda .date {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #181830;
+}
+
+.section_agenda .agenda .wrapper .header_agenda p {
+  margin-top: 0.5rem;
+}
+
+.section_agenda .agenda .wrapper.active {
+  display: -ms-grid;
+  display: grid;
+  -webkit-animation: fade 0.4s ease-in-out forwards;
+          animation: fade 0.4s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=agenda.css.map */

@@ -31,3 +31,12 @@ function closeCart() {
   cartWrapper.classList.remove("active");
   cart_items.classList.remove("active");
 }
+
+//scroll to view
+
+const learnBtn = document.querySelector(".learn");
+
+learnBtn.addEventListener("click", () => {
+  const el = document.getElementById(learnBtn.getAttribute("data-link"));
+  el.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+});

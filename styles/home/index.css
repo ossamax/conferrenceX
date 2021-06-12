@@ -1085,6 +1085,37 @@ p {
   color: white;
 }
 
+.meet_team .wrapper .interested_cta {
+  text-align: center;
+}
+
+.meet_team .wrapper .interested_cta h1 {
+  color: #181830;
+}
+
+.meet_team .wrapper .interested_cta p {
+  padding: 1rem 0 2rem;
+}
+
+.meet_team .wrapper .interested_cta button {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 2px solid #181830;
+  color: #181830;
+  padding: 1.3rem 0;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.meet_team .wrapper .interested_cta button:hover {
+  background-color: #4a3aff;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
 .agenda .wrapper {
   padding: 8rem 0;
 }
@@ -2341,14 +2372,15 @@ footer .wrapper {
 }
 
 footer .wrapper .header {
-  border-bottom: 1.2px solid #acaaaa;
   max-height: 380px;
   width: 100%;
 }
 
 @media screen and (min-width: 700px) {
   footer .wrapper .header {
+    border-bottom: 1.2px solid #acaaaa;
     height: 250px;
+    border: none;
   }
 }
 
@@ -2494,9 +2526,6 @@ footer .wrapper .pages_contact {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -2506,8 +2535,8 @@ footer .wrapper .pages_contact h2 {
 
 footer .wrapper .pages_contact .pages {
   color: white;
-  border-bottom: 1.2px solid #acaaaa;
-  padding-bottom: 2rem;
+  border-top: 1.2px solid #acaaaa;
+  padding: 2rem 0;
 }
 
 footer .wrapper .pages_contact .pages .link {
@@ -2534,7 +2563,7 @@ footer .wrapper .pages_contact .pages .link a:hover {
 
 footer .wrapper .pages_contact .contact {
   color: white;
-  border-bottom: 1.2px solid #acaaaa;
+  border-top: 1.2px solid #acaaaa;
   padding: 2rem 0;
 }
 
@@ -2582,5 +2611,8 @@ footer .copyright {
   font-size: 0.9rem;
   text-align: center;
   padding: 2rem 0;
+  border-top: 0.5px solid rgba(187, 187, 187, 0.37);
+  max-width: 90%;
+  margin: auto;
 }
 /*# sourceMappingURL=index.css.map */

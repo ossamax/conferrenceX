@@ -2,7 +2,7 @@
   background-color: #181830;
   .wrapper {
     padding: 5rem 0;
-    
+
     .team_wrp {
       padding: 4rem 0;
       display: grid;
@@ -140,6 +140,30 @@
         &:hover {
           background-color: $twitchcolor;
           color: white;
+        }
+      }
+    }
+    .interested_cta {
+      text-align: center;
+      h1 {
+        color: $headerColor;
+      }
+      p {
+        padding: 1rem 0 2rem;
+      }
+      button {
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        border: 2px solid $headerColor;
+        color: $headerColor;
+        padding: 1.3rem 0;
+        font-size: 1.2rem;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background-color: $twitchcolor;
+          color: white;
+          transform: translateY(-3px);
         }
       }
     }
