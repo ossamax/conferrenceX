@@ -40,7 +40,7 @@
 }
 
 .carts .wrp {
-  width: 95%;
+  width: 92%;
   margin: auto;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .carts .wrp .tickets_wrapper .cart_ticket:hover {
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .carts .wrp .tickets_wrapper .cart_ticket:hover .top .type {
