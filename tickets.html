@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <link
+      href="images/icon-template.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <meta
+      content="Conference X is a premium conference website that will help  you launch a great website for your virtual or local event as easy as 1, 2, 3. If you want to create a professional website for your event, this is the template for you."
+      name="description"
+    />
+
+    <link rel="stylesheet" href="styles/home/index.css" />
+    <link rel="stylesheet" href="styles/agenda/agenda.css" />
+    <link rel="stylesheet" href="styles/tickets/tickets.css" />
+    <title>Conference X</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </head>
+  <body>
+    <div class="hero_nav">
+      <nav class="navigation">
+        <div class="wrapper">
+          <a href="index.html" class="logo">
+            <img
+              src="images/logo-white.svg"
+              alt="conference brand-logo"
+              class="logo-img"
+            />
+          </a>
+          <div class="cart-icon-nav-links">
+            <div class="nav_links">
+              <a href="index.html">Home</a>
+              <a href="aganda.html">Agenda</a>
+              <a href="speakers.html">Speakers</a>
+            </div>
+            <div class="cart_icon">
+              <span
+                class="iconify"
+                data-icon="bytesize:cart"
+                data-inline="false"
+              ></span>
+              <span class="total_items">0</span>
+            </div>
+            <div class="burger_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="cart_items_wrapper">
+            <div class="cart_items">
+              <div class="header">
+                <div class="yr_cart">Your Cart</div>
+                <div class="close_cart_btn" onclick="closeCart()">
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:close-square-outlined"
+                    data-inline="false"
+                  ></span>
+                </div>
+              </div>
+              <div class="item_wrapper">
+                <div class="no_items_found">
+                  <p>No items found</p>
+                  <button>Buy Tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero_tickets">
+        <div class="wrapper">
+          <h1>Tickets</h1>
+          <p>
+            Nunc pulvinar sapien et ligula ullamcorper. Ut venenatis tellus in
+            metus vulputate eu scelerisque. Aliquam eleifend mi in nulla posuere
+            sollicitudin.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="carts">
+      <div class="wrp">
+        <div class="tickets_wrapper">
+          <div class="cart_ticket">
+            <div class="top">
+              <div class="head_ticket">
+                <img src="images/icon_tickets_1.png" alt="standar tickets" />
+                <div class="price">$ 49.00 USD</div>
+              </div>
+              <div class="type">Standard</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
+                quis
+              </p>
+            </div>
+            <div class="line_break"></div>
+            <div class="bottom">
+              <div class="ticket_features">
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span>
+                  2-day live conference access
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >20+ hours of content
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >Live Q&A session
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >1 week replay access
+                </div>
+              </div>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="cart_ticket">
+            <div class="top">
+              <div class="head_ticket">
+                <img src="images/icon_tickets_2.png" alt="standar tickets" />
+                <div class="price">$ 69.00 USD</div>
+              </div>
+              <div class="type">Premium</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
+                quis
+              </p>
+            </div>
+            <div class="line_break"></div>
+            <div class="bottom">
+              <div class="ticket_features">
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span>
+                  Everything in Standard
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >12 marketing workshops
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >1 hour live mentoring session
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >Priority on Q&A session
+                </div>
+              </div>
+              <button>Learn More</button>
+            </div>
+          </div>
+          <div class="cart_ticket">
+            <div class="top">
+              <div class="head_ticket">
+                <img src="images/icon_tickets_3.png" alt="Deluxe tickets" />
+                <div class="price">$ 99.00 USD</div>
+              </div>
+              <div class="type">Deluxe</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit quis
+                quis
+              </p>
+            </div>
+            <div class="line_break"></div>
+            <div class="bottom">
+              <div class="ticket_features">
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span>
+                  Everything in Premium
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >Free t-shirt & stickers
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >Access to talks slides
+                </div>
+                <div>
+                  <span
+                    class="iconify"
+                    data-icon="akar-icons:circle-check"
+                    data-inline="false"
+                  ></span
+                  >Unlimited replay access
+                </div>
+              </div>
+              <button>Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <div class="header">
+          <div class="poster">
+            <img src="images/shape-1.svg" alt="" class="shape-1" />
+            <img src="images/shape-2.svg" alt="" class="shape-2" />
+            <img src="images/shape-3.svg" alt="" class="shape-3" />
+            <img src="images/shape-4.svg" alt="" class="shape-4" />
+            <div class="text">
+              Get your tickets and assist the best marketing event in the world
+            </div>
+            <div class="cta_btn">
+              <button>Buy Tickets</button>
+            </div>
+          </div>
+          <div class="logo_text">
+            <img src="images/logo-white.svg" alt="conference brand-logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
+              praesent scelerisque dolor duis quam mi.
+            </p>
+          </div>
+        </div>
+        <div class="pages_contact">
+          <div class="pages">
+            <h2>PAGES</h2>
+            <div class="link">
+              <a href="index.html">Home</a>
+              <a href="speakers.html">Speakers</a>
+              <a href="tickets.html">Tickets</a>
+              <a href="aganda.html">Agenda</a>
+            </div>
+          </div>
+          <div class="contact">
+            <h2>CONTACT</h2>
+            <div class="emails">
+              <div>sales@conference.com</div>
+              <div>support@conference.com</div>
+              <div>sponsors@conference.com</div>
+              <div>(123) 456 - 7894</div>
+            </div>
+            <div class="social_media_links">
+              <span
+                class="iconify"
+                data-icon="bx:bxl-facebook"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="akar-icons:twitter-fill"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="ant-design:instagram-filled"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="bx:bxl-linkedin"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="bx:bxl-youtube"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="dashicons:whatsapp"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© Copyright - Conference X</div>
+    </footer>
+    <script src="src/app.js"></script>
+  </body>
+</html>

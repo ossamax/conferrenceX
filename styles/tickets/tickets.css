@@ -1,0 +1,167 @@
+.hero_tickets {
+  width: 100%;
+  height: 400px;
+  max-height: 500px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero_tickets h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .hero_tickets h1 {
+    font-size: 4rem;
+  }
+}
+
+.hero_tickets p {
+  color: #dadade;
+  padding: 0 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .hero_tickets p {
+    font-size: 1.3rem;
+  }
+}
+
+.carts .wrp {
+  width: 90%;
+  margin: auto;
+}
+
+.carts .wrp .tickets_wrapper {
+  padding: 8rem 0;
+}
+
+@media screen and (min-width: 660px) {
+  .carts .wrp .tickets_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .carts .wrp .tickets_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket {
+  padding: 2rem 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px #e4e4e4;
+          box-shadow: 0px 0px 15px #e4e4e4;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  -webkit-box-shadow: 0px 0px 15px #9d9efa;
+          box-shadow: 0px 0px 15px #9d9efa;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket:hover .top .type {
+  color: #4a3aff;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .top .head_ticket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .top .head_ticket img {
+  width: 100px;
+  border: 2px solid #181830;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .top .head_ticket .price {
+  padding: 0.8rem;
+  background-color: #4a3aff;
+  color: white;
+  font-weight: 600;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .top .type {
+  color: #181830;
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .line_break {
+  width: 100%;
+  height: 1px;
+  background-color: #d1d1d1;
+  margin: 1.5rem 0;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .bottom .ticket_features div {
+  padding: 0.6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  color: #181830;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .bottom .ticket_features div svg {
+  color: #4a3aff;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .bottom button {
+  margin: 2rem 0 0;
+  width: 100%;
+  padding: 1.4rem;
+  background-color: #4a3aff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #181830;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.carts .wrp .tickets_wrapper .cart_ticket .bottom button:hover {
+  background-color: #343a50;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+/*# sourceMappingURL=tickets.css.map */

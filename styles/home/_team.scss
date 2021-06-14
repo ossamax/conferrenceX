@@ -145,11 +145,14 @@
     }
     .interested_cta {
       text-align: center;
+      padding: 3rem 0;
       h1 {
         color: $headerColor;
       }
       p {
         padding: 1rem 0 2rem;
+        max-width: 500px;
+        margin: auto;
       }
       button {
         width: 100%;

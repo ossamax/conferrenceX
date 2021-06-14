@@ -5,6 +5,7 @@ $headerColor: #181830;
 
 .hero_nav {
   background-color: $headerColor;
+  height: 100%;
   &::before {
     content: none;
   }
@@ -27,18 +28,25 @@ $headerColor: #181830;
     height: 400px;
     max-height: 500px;
     text-align: center;
+    text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     h1 {
       color: white;
       font-size: 3rem;
       margin: 1rem 0;
+      @media screen and (min-width: 600px) {
+        font-size: 4rem;
+      }
     }
     p {
       color: #dadade;
       padding: 0 1rem;
+      max-width: 800px;
+      @media screen and (min-width: 600px) {
+        font-size: 1.3rem;
+      }
     }
   }
 }
@@ -49,6 +57,8 @@ $headerColor: #181830;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      max-width: 500px;
+      margin: auto;
       button {
         width: 160px;
         padding: 1.3rem 0;

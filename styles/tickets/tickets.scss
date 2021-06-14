@@ -1,0 +1,129 @@
+//main site colors
+$twitchcolor: #4a3aff;
+$paragraphColor: #6e7191;
+$headerColor: #181830;
+
+.hero_tickets {
+  width: 100%;
+  height: 400px;
+  max-height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 1rem 0;
+    @media screen and (min-width: 600px) {
+      font-size: 4rem;
+    }
+  }
+  p {
+    color: #dadade;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin: auto;
+    @media screen and (min-width: 600px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.carts {
+  .wrp {
+    width: 90%;
+    margin: auto;
+    .tickets_wrapper {
+      padding: 8rem 0;
+      @media screen and (min-width: 660px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+      }
+      @media screen and (min-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+      }
+
+      .cart_ticket {
+        padding: 2rem 1.5rem;
+        background-color: white;
+        box-shadow: 0px 0px 15px rgb(228, 228, 228);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: translateY(-7px);
+          box-shadow: 0px 0px 15px rgb(157, 158, 250);
+          .top {
+            .type {
+              color: $twitchcolor;
+            }
+          }
+        }
+
+        .top {
+          .head_ticket {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            img {
+              width: 100px;
+              border: 2px solid $headerColor;
+            }
+            .price {
+              padding: 0.8rem;
+              background-color: $twitchcolor;
+              color: white;
+              font-weight: 600;
+            }
+          }
+          .type {
+            color: $headerColor;
+            margin: 1.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .line_break {
+          width: 100%;
+          height: 1px;
+          background-color: rgb(209, 209, 209);
+          margin: 1.5rem 0;
+        }
+        .bottom {
+          .ticket_features {
+            div {
+              padding: 0.6rem 0;
+              display: flex;
+              align-items: center;
+              font-weight: 600;
+              color: $headerColor;
+              svg {
+                color: $twitchcolor;
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+              }
+            }
+          }
+          button {
+            margin: 2rem 0 0;
+            width: 100%;
+            padding: 1.4rem;
+            background-color: $twitchcolor;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid $headerColor;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              background-color: rgb(52, 58, 80);
+              transform: translateY(-4px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

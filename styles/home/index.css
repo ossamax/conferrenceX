@@ -1087,6 +1087,7 @@ p {
 
 .meet_team .wrapper .interested_cta {
   text-align: center;
+  padding: 3rem 0;
 }
 
 .meet_team .wrapper .interested_cta h1 {
@@ -1095,6 +1096,8 @@ p {
 
 .meet_team .wrapper .interested_cta p {
   padding: 1rem 0 2rem;
+  max-width: 500px;
+  margin: auto;
 }
 
 .meet_team .wrapper .interested_cta button {
