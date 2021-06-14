@@ -573,6 +573,17 @@ p {
   }
 }
 
+.hero_nav .hero .wrapper .hero_content .btns_wrapper a {
+  width: 100%;
+}
+
+@media screen and (min-width: 850px) {
+  .hero_nav .hero .wrapper .hero_content .btns_wrapper a {
+    width: 180px;
+    font-size: 1.2rem;
+  }
+}
+
 .hero_nav .hero .wrapper .hero_content .btns_wrapper button {
   display: block;
   width: 100%;
@@ -1036,6 +1047,16 @@ p {
   }
 }
 
+.meet_team .wrapper .btns_wrapper a {
+  width: 100%;
+}
+
+@media screen and (min-width: 850px) {
+  .meet_team .wrapper .btns_wrapper a {
+    max-width: 200px;
+  }
+}
+
 .meet_team .wrapper .btns_wrapper button {
   display: block;
   width: 100%;
@@ -1054,7 +1075,6 @@ p {
 
 @media screen and (min-width: 850px) {
   .meet_team .wrapper .btns_wrapper button {
-    width: 180px;
     font-size: 1.2rem;
   }
 }

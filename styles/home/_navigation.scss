@@ -307,6 +307,13 @@
           @media screen and (min-width: 1000px) {
             justify-content: flex-start;
           }
+          a {
+            width: 100%;
+            @media screen and (min-width: 850px) {
+              width: 180px;
+              font-size: 1.2rem;
+            }
+          }
           button {
             display: block;
             width: 100%;

@@ -107,6 +107,12 @@
       @media screen and (min-width: 900px) {
         flex-direction: row;
       }
+      a {
+        width: 100%;
+        @media screen and (min-width: 850px) {
+          max-width: 200px;
+        }
+      }
       button {
         display: block;
         width: 100%;
@@ -119,7 +125,6 @@
           transform: translateY(-3px);
         }
         @media screen and (min-width: 850px) {
-          width: 180px;
           font-size: 1.2rem;
         }
       }
@@ -154,6 +159,7 @@
         max-width: 500px;
         margin: auto;
       }
+
       button {
         width: 100%;
         max-width: 400px;

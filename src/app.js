@@ -2,12 +2,13 @@ const burgerIcon = document.querySelector(".burger_icon");
 const navLinks = document.querySelector(".nav_links");
 const logoImg = document.querySelector(".logo-img");
 const nav = document.querySelector(".navigation");
+const src = logoImg.src;
 
 burgerIcon.addEventListener("click", () => {
   if (burgerIcon.classList.contains("active")) {
     burgerIcon.classList.remove("active");
     navLinks.classList.remove("active");
-    logoImg.src = "images/logo.svg";
+    logoImg.src = src;
     document.body.style.overflow = "scroll";
   } else {
     burgerIcon.classList.add("active");
@@ -31,12 +32,3 @@ function closeCart() {
   cartWrapper.classList.remove("active");
   cart_items.classList.remove("active");
 }
-
-//scroll to view
-
-const learnBtn = document.querySelector(".learn");
-
-learnBtn.addEventListener("click", () => {
-  const el = document.getElementById(learnBtn.getAttribute("data-link"));
-  el.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-});

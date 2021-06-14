@@ -35,8 +35,9 @@ $headerColor: #181830;
     margin: auto;
     .tickets_wrapper {
       padding: 8rem 0;
+      display: grid;
+      row-gap: 30px;
       @media screen and (min-width: 660px) {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
       }

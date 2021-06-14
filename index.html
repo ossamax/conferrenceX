@@ -82,8 +82,8 @@
               nunc sollicitudin arcu cum sociis.
             </p>
             <div class="btns_wrapper">
-              <a href="tickets.html">
-                <button class="buy">Buy Tickets</button></a
+              <a href="tickets.html"
+                ><button class="buy">Buy Tickets</button></a
               >
               <button class="learn" data-link="about">Learn More</button>
             </div>
@@ -122,7 +122,7 @@
             vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
             imperdiet. Nunc ut sem vitae risus tristique posuere.
           </p>
-          <button>Buy Tickets</button>
+          <a href="tickets.html"><button class="buy">Buy Tickets</button></a>
         </div>
         <div class="about_split_info">
           <div class="square active">
@@ -257,7 +257,9 @@
 
         <div class="btns_wrapper">
           <a href="tickets.html"><button class="buy">Buy Tickets</button></a>
-          <button class="speakers">All Speakers</button>
+          <a href="speakers.html">
+            <button class="speakers">All Speakers</button></a
+          >
         </div>
       </div>
     </div>
@@ -421,7 +423,7 @@
           </div>
         </div>
         <div class="cta_btn">
-          <a href="tickets.html"><button class="buy">Buy Tickets</button></a>
+          <button class="buy">Buy Tickets</button>
         </div>
       </div>
     </div>
@@ -783,5 +785,17 @@
       <div class="copyright">© Copyright - Conference X</div>
     </footer>
     <script src="src/app.js"></script>
+    <script>
+      const learnBtn = document.querySelector(".learn");
+
+      learnBtn.addEventListener("click", () => {
+        const el = document.getElementById(learnBtn.getAttribute("data-link"));
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
+      });
+    </script>
   </body>
 </html>
