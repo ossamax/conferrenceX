@@ -38,6 +38,8 @@ $headerColor: #181830;
     .tickets_wrapper {
       display: grid;
       row-gap: 30px;
+      position: relative;
+      top: -10rem;
       @media screen and (min-width: 660px) {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
@@ -53,7 +55,6 @@ $headerColor: #181830;
       .cart_ticket {
         padding: 2rem 1.5rem;
         background-color: white;
-
         cursor: pointer;
         transition: 0.3s ease-in-out;
         &:hover {

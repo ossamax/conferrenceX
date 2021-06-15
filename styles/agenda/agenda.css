@@ -12,8 +12,8 @@
 }
 
 .hero_nav .navigation .wrapper .cart_icon .total_items {
-  background-color: white !important;
-  color: #4a3aff !important;
+  background-color: #4a3aff !important;
+  color: white !important;
   font-weight: bold;
 }
 
@@ -115,7 +115,9 @@
 }
 
 .section_agenda .agenda .wrapper .header_agenda p {
-  margin-top: 0.5rem;
+  padding-top: 1rem;
+  max-width: 500px;
+  margin: auto;
 }
 
 .section_agenda .agenda .wrapper.active {

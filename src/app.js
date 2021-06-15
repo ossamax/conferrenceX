@@ -32,3 +32,17 @@ function closeCart() {
   cartWrapper.classList.remove("active");
   cart_items.classList.remove("active");
 }
+
+//videos switcher
+const yearsBtns = $(".years_wrapper .years");
+const videos = $(".video_wrapper .video");
+console.log(yearsBtns);
+
+for (let i = 0; i <= yearsBtns.length; i++) {
+  yearsBtns.eq(i).on("click", () => {
+    videos.removeClass("active");
+    yearsBtns.removeClass("active");
+    videos.eq(i).addClass("active");
+    yearsBtns.eq(i).addClass("active");
+  });
+}

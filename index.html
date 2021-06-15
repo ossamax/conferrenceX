@@ -359,8 +359,8 @@
           </div>
         </div>
         <div class="cta_btns">
-          <button class="buy">Buy Tickets</button>
-          <button class="learn">All Tickets</button>
+          <a href="tickets.html"> <button class="buy">Buy Tickets</button></a>
+          <a href="aganda.html"> <button class="learn">All Agenda</button></a>
         </div>
       </div>
     </div>
@@ -423,7 +423,7 @@
           </div>
         </div>
         <div class="cta_btn">
-          <button class="buy">Buy Tickets</button>
+          <a href="tickets.html"> <button class="buy">Buy Tickets</button></a>
         </div>
       </div>
     </div>
@@ -438,7 +438,7 @@
             consectetur tristique. Sit pellentesque et suspendisse ultricies
             aliquet eget proin sed sagittis. Ipsum sapien at venenatis.
           </p>
-          <button>Buy Tickets</button>
+          <a href="tickets.html"><button>Buy Tickets</button></a>
         </div>
         <div class="conference_revenu">
           <div class="location_info">
@@ -447,7 +447,11 @@
               135 Fourth Street, Suite 4000,<br />
               San Francisco, CA 94103
             </p>
-            <div>View Location</div>
+            <div>
+              <a href="https://www.google.com/maps" target="_blank"
+                >View Location</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -460,23 +464,47 @@
         </div>
         <div class="video_conference">
           <div class="years_wrapper">
-            <div class="active">2019</div>
-            <div>2020</div>
-            <div>2021</div>
+            <div class="years active">2019</div>
+            <div class="years">2020</div>
+            <div class="years">2021</div>
           </div>
           <div class="video_wrapper">
-            <img
-              src="images/video_background.jpg"
-              class="video_img"
-              alt="event-image"
-            />
-            <div class="overlay"></div>
-            <div class="play_btn">
-              <img src="images/play.svg" class="playicon" alt="" />
+            <div class="video active">
+              <img
+                src="images/video_background.jpg"
+                class="video_img"
+                alt="event-image"
+              />
+              <div class="overlay"></div>
+              <div class="play_btn">
+                <img src="images/play.svg" class="playicon" alt="" />
+              </div>
+            </div>
+            <div class="video">
+              <img
+                src="images/video_background.jpg"
+                class="video_img"
+                alt="event-image"
+              />
+              <div class="overlay"></div>
+              <div class="play_btn">
+                <img src="images/play.svg" class="playicon" alt="" />
+              </div>
+            </div>
+            <div class="video">
+              <img
+                src="images/video_background.jpg"
+                class="video_img"
+                alt="event-image"
+              />
+              <div class="overlay"></div>
+              <div class="play_btn">
+                <img src="images/play.svg" class="playicon" alt="" />
+              </div>
             </div>
           </div>
           <div class="cta_btn">
-            <button class="buy">Buy Tickets</button>
+            <a href="tickets.html"><button class="buy">Buy Tickets</button></a>
           </div>
         </div>
       </div>
@@ -549,7 +577,7 @@
             <h1>What our pasts attendees say about our conference</h1>
           </div>
           <div class="cta_btn">
-            <button>Buy Tickets</button>
+            <a href="tickets.html"> <button>Buy Tickets</button></a>
           </div>
         </div>
         <div class="cards_wrp">
@@ -718,7 +746,7 @@
               Get your tickets and assist the best marketing event in the world
             </div>
             <div class="cta_btn">
-              <button>Buy Tickets</button>
+              <a href="tickets.html"><button>Buy Tickets</button></a>
             </div>
           </div>
           <div class="logo_text">
@@ -784,6 +812,7 @@
       </div>
       <div class="copyright">© Copyright - Conference X</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="src/app.js"></script>
     <script>
       const learnBtn = document.querySelector(".learn");

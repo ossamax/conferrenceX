@@ -144,6 +144,13 @@
       @media screen and (min-width: 900px) {
         flex-direction: row;
       }
+      a {
+        width: 100%;
+        @media screen and (min-width: 850px) {
+          width: 200px;
+          font-size: 1.2rem;
+        }
+      }
       button {
         display: block;
         width: 100%;
@@ -155,10 +162,6 @@
         max-width: 500px;
         &:hover {
           transform: translateY(-3px);
-        }
-        @media screen and (min-width: 850px) {
-          width: 200px;
-          font-size: 1.2rem;
         }
       }
       .buy {

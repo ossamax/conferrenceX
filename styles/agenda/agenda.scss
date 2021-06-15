@@ -16,8 +16,8 @@ $headerColor: #181830;
           color: white;
         }
         .total_items {
-          background-color: white !important;
-          color: $twitchcolor !important;
+          background-color: $twitchcolor !important;
+          color: white !important;
 
           font-weight: bold;
         }
@@ -94,7 +94,9 @@ $headerColor: #181830;
           color: $headerColor;
         }
         p {
-          margin-top: 0.5rem;
+          padding-top: 1rem;
+          max-width: 500px;
+          margin: auto;
         }
       }
     }

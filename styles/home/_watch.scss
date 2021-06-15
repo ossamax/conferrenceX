@@ -17,7 +17,7 @@
         background-color: #333354;
         max-width: 380px;
         margin: auto;
-        div {
+        .years {
           padding: 1.3rem 2.3rem;
           color: $paragraphColor;
           cursor: pointer;
@@ -45,72 +45,97 @@
         @media screen and (min-width: 600px) {
           height: 600px;
         }
-        .video_img {
+        .video {
+          display: none;
+          position: relative;
           width: 100%;
           height: 100%;
-          position: absolute;
-          z-index: 0;
-          transition: 0.3s ease-in-out;
+          .video_img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            transition: 0.3s ease-in-out;
+          }
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #18183081;
+            z-index: 1;
+          }
+          .play_btn {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              transform: scale(0.9);
+            }
+            img {
+              width: 30px;
+            }
+          }
         }
-        .overlay {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-color: #18183081;
-          z-index: 1;
-        }
-        .play_btn {
-          width: 120px;
-          height: 120px;
-          border-radius: 100%;
-          background-color: white;
+        .video.active {
+          animation: fade 1s ease-in-out forwards;
           display: flex;
           align-items: center;
           justify-content: center;
-          position: relative;
-          z-index: 2;
-          cursor: pointer;
-          transition: 0.3s ease-in-out;
+        }
+      }
+
+      .cta_btn {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        a {
+          width: 100%;
+          @media screen and (min-width: 850px) {
+            width: 200px;
+            font-size: 1.2rem;
+          }
+        }
+        button {
+          display: block;
+          width: 100%;
+          padding: 1.5rem 0;
+          margin: 0.4rem 0;
+          border: 2px solid $headerColor;
+          font-size: 1rem;
+          transition: 0.4s ease-in-out;
+          max-width: 500px;
           &:hover {
-            transform: scale(0.9);
-          }
-          img {
-            width: 30px;
+            transform: translateY(-3px);
           }
         }
-      }
-        .cta_btn {
-      padding: 2rem 0;
-      display: flex;
-      justify-content: center;
-      button {
-        display: block;
-        width: 100%;
-        padding: 1.5rem 0;
-        margin: 0.4rem 0;
-        border: 2px solid $headerColor;
-        font-size: 1rem;
-        transition: 0.4s ease-in-out;
-        max-width: 500px;
-        &:hover {
-          transform: translateY(-3px);
-        }
-        @media screen and (min-width: 850px) {
-          width: 200px;
-          font-size: 1.2rem;
-        }
-      }
-      .buy {
-        background-color: $twitchcolor;
-        color: white;
-        &:hover {
-          background-color: rgb(87, 87, 87);
+        .buy {
+          background-color: $twitchcolor;
           color: white;
+          &:hover {
+            background-color: rgb(87, 87, 87);
+            color: white;
+          }
         }
       }
     }
-    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

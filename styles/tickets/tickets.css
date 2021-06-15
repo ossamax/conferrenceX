@@ -48,6 +48,8 @@
   display: -ms-grid;
   display: grid;
   row-gap: 30px;
+  position: relative;
+  top: -10rem;
 }
 
 @media screen and (min-width: 660px) {
