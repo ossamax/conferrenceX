@@ -36,7 +36,6 @@ function closeCart() {
 //videos switcher
 const yearsBtns = $(".years_wrapper .years");
 const videos = $(".video_wrapper .video");
-console.log(yearsBtns);
 
 for (let i = 0; i <= yearsBtns.length; i++) {
   yearsBtns.eq(i).on("click", () => {
@@ -59,3 +58,5 @@ for (let i = 0; i <= ContentBtns.length; i++) {
     ContentBtns.eq(i).addClass("active");
   });
 }
+
+

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" Content-Type="text/javascript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:type" content="website" />
     <link
       href="../images/icon-template.svg"
       rel="shortcut icon"
-      type="image/x-icon"
+      type="image/svg+xml"
     />
     <meta
       content="Conference X is a premium conference website that will help  you launch a great website for your virtual or local event as easy as 1, 2, 3. If you want to create a professional website for your event, this is the template for you."
@@ -95,7 +94,7 @@
                   data-icon="akar-icons:circle-check"
                   data-inline="false"
                 ></span>
-                Everything in Premium
+                2-day live conference access
               </div>
               <div>
                 <span
@@ -103,7 +102,7 @@
                   data-icon="akar-icons:circle-check"
                   data-inline="false"
                 ></span
-                >Free t-shirt & stickers
+                >20+ hours of content
               </div>
               <div>
                 <span
@@ -111,7 +110,7 @@
                   data-icon="akar-icons:circle-check"
                   data-inline="false"
                 ></span
-                >Access to talks slides
+                >Live Q&A session
               </div>
               <div>
                 <span
@@ -119,7 +118,7 @@
                   data-icon="akar-icons:circle-check"
                   data-inline="false"
                 ></span
-                >Unlimited replay access
+                >1 week replay access
               </div>
             </div>
           </div>
@@ -133,25 +132,148 @@
               $ 49.00 USD
               <span>$ 99.00 USD</span>
             </div>
-            <form action="#">
-              <select>
-                <option value="0">Select ticket</option>
-                <option value="1">standard</option>
+            <div class="form">
+              <select name="ticket" title="tickets standard" required>
+                <option>Select Ticket</option>
+                <option>Standard</option>
               </select>
-              <input type="number" min="1" value="1" /><br />
-              <button type="submit">Add to cart</button>
-            </form>
+
+              <input
+                type="number"
+                min="1"
+                value="1"
+                placeholder="1"
+                required
+              /><br />
+              <button type="submit" data-id="1" class="btn_standard">
+                Add to cart
+              </button>
+            </div>
           </div>
         </div>
         <div class="wrapper_main_description">
           <div class="main_description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus inventore, rem vel quaerat reprehenderit ab possimus?
-            Explicabo, adipisci odit. Facere.
+            <h1>About the Conference</h1>
+            <p>
+              Amet risus nullam eget felis eget nunc lobortis mattis.
+              <strong>Nibh nisl</strong>
+              condimentum id venenatis a condimentum vitae sapien. Orci sagittis
+              eu <a href="#">volutpat odio</a>. Tellus elementum sagittis vitae
+              et leo duis. Consectetur a erat nam at lectus. Lacinia at quis
+              risus sed. Nunc pulvinar sapien et ligula ullamcorper malesuada.
+            </p>
+            <h2>What’s included in this ticket?</h2>
+            <p>
+              Ut tortor pretium viverra suspendisse potenti nullam ac tortor.
+              Aliquam id diam maecenas ultricies mi. Egestas diam in arcu cursus
+              euismod.
+            </p>
+            <div class="ticket_benifits">
+              <p>
+                1.Nibh nisl condimentum id venenatis a condimentum vitae sapien.
+              </p>
+              <p>
+                2.Elit eget gravida cum sociis. Pharetra et ultrices neque
+                ornare.
+              </p>
+              <p>3.Aliquam id diam maecenas ultricies mi</p>
+              <p>
+                4.Fermentum odio eu feugiat pretium nibh ipsum consequat nisl
+                vel
+              </p>
+            </div>
+            <h3>Is this the right ticket for me?</h3>
+            <p>
+              Velit scelerisque in dictum non. Massa vitae tortor condimentum
+              lacinia. Quisque egestas diam in arcu cursus euismod quis. Nisl
+              rhoncus mattis rhoncus urna neque viverra justo nec. Integer quis
+              auctor elit sed vulputate mi sit amet. Condimentum mattis
+              pellentesque id nibh tortor id aliquet lectus proin.
+            </p>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="wrapper">
+        <div class="header">
+          <div class="poster">
+            <img src="../images/shape-1.svg" alt="" class="shape-1" />
+            <img src="../images/shape-2.svg" alt="" class="shape-2" />
+            <img src="../images/shape-3.svg" alt="" class="shape-3" />
+            <img src="../images/shape-4.svg" alt="" class="shape-4" />
+            <div class="text">
+              Get your tickets and assist the best marketing event in the world
+            </div>
+            <div class="cta_btn">
+              <a href="../tickets.html"><button>Buy Tickets</button></a>
+            </div>
+          </div>
+          <div class="logo_text">
+            <img src="../images/logo-white.svg" alt="conference brand-logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate
+              praesent scelerisque dolor duis quam mi.
+            </p>
+          </div>
+        </div>
+        <div class="pages_contact">
+          <div class="pages">
+            <h2>PAGES</h2>
+            <div class="link">
+              <a href="../index.html">Home</a>
+              <a href="../speakers.html">Speakers</a>
+              <a href="../tickets.html">Tickets</a>
+              <a href="../aganda.html">Agenda</a>
+            </div>
+          </div>
+          <div class="contact">
+            <h2>CONTACT</h2>
+            <div class="emails">
+              <div>sales@conference.com</div>
+              <div>support@conference.com</div>
+              <div>sponsors@conference.com</div>
+              <div>(123) 456 - 7894</div>
+            </div>
+            <div class="social_media_links">
+              <span
+                class="iconify"
+                data-icon="bx:bxl-facebook"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="akar-icons:twitter-fill"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="ant-design:instagram-filled"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="bx:bxl-linkedin"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="bx:bxl-youtube"
+                data-inline="false"
+              ></span>
+              <span
+                class="iconify"
+                data-icon="dashicons:whatsapp"
+                data-inline="false"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© Copyright - Conference X</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../src/app.js"></script>
+    <script src="../src/card.js"></script>
   </body>
 </html>
