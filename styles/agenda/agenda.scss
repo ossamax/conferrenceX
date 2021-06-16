@@ -31,6 +31,7 @@ $headerColor: #181830;
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     h1 {
       color: white;
@@ -57,7 +58,7 @@ $headerColor: #181830;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 500px;
+      max-width: 350px;
       margin: auto;
       button {
         width: 160px;

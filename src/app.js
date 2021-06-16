@@ -13,7 +13,7 @@ burgerIcon.addEventListener("click", () => {
   } else {
     burgerIcon.classList.add("active");
     navLinks.classList.add("active");
-    logoImg.src = "images/logo-white.svg";
+    logoImg.src = "../images/logo-white.svg";
     document.body.style.overflow = "hidden";
   }
 });
@@ -44,5 +44,18 @@ for (let i = 0; i <= yearsBtns.length; i++) {
     yearsBtns.removeClass("active");
     videos.eq(i).addClass("active");
     yearsBtns.eq(i).addClass("active");
+  });
+}
+
+//agenda switcher
+const ContentBtns = $(".header_btns button");
+const content = $(".agenda .wrapper");
+
+for (let i = 0; i <= ContentBtns.length; i++) {
+  ContentBtns.eq(i).on("click", () => {
+    content.removeClass("active");
+    ContentBtns.removeClass("active");
+    content.eq(i).addClass("active");
+    ContentBtns.eq(i).addClass("active");
   });
 }

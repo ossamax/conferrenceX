@@ -85,10 +85,13 @@ footer {
         position: relative;
         top: -3rem;
         text-align: center;
+        border-bottom: 0.5px solid rgba(187, 187, 187, 0.37);
+        padding-bottom: 2rem;
         @media screen and (min-width: 700px) {
           display: flex;
           justify-content: space-between;
           text-align: left;
+          top: -7rem;
         }
         img {
           cursor: pointer;
@@ -116,7 +119,7 @@ footer {
       }
       .pages {
         color: white;
-        border-top: 1.2px solid rgb(172, 170, 170);
+        //  border-top: 1.2px solid rgb(172, 170, 170);
         padding: 2rem 0;
 
         .link {
@@ -135,7 +138,7 @@ footer {
       }
       .contact {
         color: white;
-        border-top: 1.2px solid rgb(172, 170, 170);
+        //border-top: 1.2px solid rgb(172, 170, 170);
         padding: 2rem 0;
         .emails {
           display: flex;

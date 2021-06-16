@@ -2550,6 +2550,8 @@ footer .wrapper .header .logo_text {
   position: relative;
   top: -3rem;
   text-align: center;
+  border-bottom: 0.5px solid rgba(187, 187, 187, 0.37);
+  padding-bottom: 2rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -2561,6 +2563,7 @@ footer .wrapper .header .logo_text {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: left;
+    top: -7rem;
   }
 }
 
@@ -2601,7 +2604,6 @@ footer .wrapper .pages_contact h2 {
 
 footer .wrapper .pages_contact .pages {
   color: white;
-  border-top: 1.2px solid #acaaaa;
   padding: 2rem 0;
 }
 
@@ -2629,7 +2631,6 @@ footer .wrapper .pages_contact .pages .link a:hover {
 
 footer .wrapper .pages_contact .contact {
   color: white;
-  border-top: 1.2px solid #acaaaa;
   padding: 2rem 0;
 }
 

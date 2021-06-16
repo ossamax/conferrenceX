@@ -15,9 +15,143 @@
       name="description"
     />
 
-    <link rel="stylesheet" href="styles/home/index.css" />
+    <link rel="stylesheet" href="../styles/home/index.css" />
+    <link rel="stylesheet" href="../styles/products/product.css" />
     <title>Standar-Conference X</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="hero_nav">
+      <nav class="navigation">
+        <div class="wrapper">
+          <a href="../index.html" class="logo">
+            <img
+              src="../images/logo-white.svg"
+              alt="conference brand-logo"
+              class="logo-img"
+            />
+          </a>
+          <div class="cart-icon-nav-links">
+            <div class="nav_links">
+              <a href="../index.html">Home</a>
+              <a href="../aganda.html">Agenda</a>
+              <a href="../speakers.html">Speakers</a>
+            </div>
+            <div class="cart_icon">
+              <span
+                class="iconify"
+                data-icon="bytesize:cart"
+                data-inline="false"
+              ></span>
+              <span class="total_items">0</span>
+            </div>
+            <div class="burger_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="cart_items_wrapper">
+            <div class="cart_items">
+              <div class="header">
+                <div class="yr_cart">Your Cart</div>
+                <div class="close_cart_btn" onclick="closeCart()">
+                  <span
+                    class="iconify"
+                    data-icon="ant-design:close-square-outlined"
+                    data-inline="false"
+                  ></span>
+                </div>
+              </div>
+              <div class="item_wrapper">
+                <div class="no_items_found">
+                  <p>No items found</p>
+                  <button>Buy Tickets</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="product_hero">
+      <div class="global_wrapper">
+        <div class="wrapper">
+          <div class="product_features">
+            <img src="../images/icon_tickets_1.png" alt="" />
+            <div class="type">Standard</div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus
+                sollicitudin porta tellus hac dictumst a. Ullamcorper at amet
+                neque, risus amet consectetur. Purus amet, amet risus, pharetra
+                tristique.
+              </p>
+            </div>
+            <div class="ticket_features">
+              <div>
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:circle-check"
+                  data-inline="false"
+                ></span>
+                Everything in Premium
+              </div>
+              <div>
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:circle-check"
+                  data-inline="false"
+                ></span
+                >Free t-shirt & stickers
+              </div>
+              <div>
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:circle-check"
+                  data-inline="false"
+                ></span
+                >Access to talks slides
+              </div>
+              <div>
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:circle-check"
+                  data-inline="false"
+                ></span
+                >Unlimited replay access
+              </div>
+            </div>
+          </div>
+          <div class="add_to_cart">
+            <h2>Get your ticket today</h2>
+            <p>
+              Lorem ipsum dolor sit amet, dolor consectetur adipiscing elit
+              purus vivera.
+            </p>
+            <div class="prices">
+              $ 49.00 USD
+              <span>$ 99.00 USD</span>
+            </div>
+            <form action="#">
+              <select>
+                <option value="0">Select ticket</option>
+                <option value="1">standard</option>
+              </select>
+              <input type="number" min="1" value="1" /><br />
+              <button type="submit">Add to cart</button>
+            </form>
+          </div>
+        </div>
+        <div class="wrapper_main_description">
+          <div class="main_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus inventore, rem vel quaerat reprehenderit ab possimus?
+            Explicabo, adipisci odit. Facere.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/app.js"></script>
+  </body>
 </html>
