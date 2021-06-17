@@ -161,7 +161,7 @@
   padding: 1.3rem;
 }
 
-.product_hero .wrapper .top_hero .add_to_cart .form button {
+.product_hero .wrapper .top_hero .add_to_cart .form .add_to_cart_btn {
   width: 100%;
   font-size: 1.1rem;
   padding: 1.3rem 0;
@@ -174,7 +174,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.product_hero .wrapper .top_hero .add_to_cart .form button:hover {
+.product_hero .wrapper .top_hero .add_to_cart .form .add_to_cart_btn:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   background-color: #303457;

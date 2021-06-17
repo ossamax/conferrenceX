@@ -1,7 +1,6 @@
 //tickets card
-const btn_standard = document.querySelectorAll(".btn_standard");
+const btn_addTocart = document.querySelectorAll(".add_to_cart_btn");
 const number = document.querySelector(".number");
-const totalItem = document.querySelector("total_items");
 
 const cart = [
   {
@@ -27,12 +26,20 @@ const cart = [
 const localData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  btn_standard.forEach((btn) => {
+  const totalItem = document.querySelector(".total_items");
+  let cartItemsNumber = 0;
+  totalItem.innerText = localStorage.length;
+
+  btn_addTocart.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       const id = event.target.getAttribute("data-id") - 1;
       localData.push(cart[id]);
       cart[id]["Quantite"] = `${number.value}`;
       localStorage.setItem("tickets", JSON.stringify(localData));
+      cartItemsNumber++;
+      totalItem.innerText = cartItemsNumber;
+      document.querySelector(".add_to_cart_btn").disabled = true;
+      console.log("clicked");
     });
   });
 });
@@ -40,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 //cart items DOM
 
 const itemsWrapper = document.querySelector(".item_wrapper");
-console.log(itemsWrapper);
 
 if (localStorage.length == 0) {
   const noItems = document.createElement("div");
@@ -56,6 +62,7 @@ if (localStorage.length == 0) {
 
   noItems.appendChild(p);
   noItems.appendChild(a);
-
   itemsWrapper.appendChild(noItems);
+} else {
+  
 }
