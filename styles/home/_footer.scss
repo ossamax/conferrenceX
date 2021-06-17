@@ -24,7 +24,7 @@ footer {
           justify-content: space-between;
           align-items: flex-end;
           text-align: left;
-          padding: 3rem 4rem;
+          padding: 5rem 4rem;
         }
         img {
           position: absolute;
@@ -54,8 +54,8 @@ footer {
           font-weight: bold;
           line-height: 1.5;
           @media screen and (min-width: 700px) {
-            max-width: 400px;
-            font-size: 2rem;
+            max-width: 500px;
+            font-size: 1.8rem;
           }
         }
         .cta_btn {

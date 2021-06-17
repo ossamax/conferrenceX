@@ -2472,7 +2472,7 @@ footer .wrapper .header .poster {
         -ms-flex-align: end;
             align-items: flex-end;
     text-align: left;
-    padding: 3rem 4rem;
+    padding: 5rem 4rem;
   }
 }
 
@@ -2512,8 +2512,8 @@ footer .wrapper .header .poster .text {
 
 @media screen and (min-width: 700px) {
   footer .wrapper .header .poster .text {
-    max-width: 400px;
-    font-size: 2rem;
+    max-width: 500px;
+    font-size: 1.8rem;
   }
 }
 

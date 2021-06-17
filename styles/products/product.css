@@ -15,40 +15,53 @@
   background-color: #4a3aff !important;
 }
 
-.product_hero .global_wrapper {
+.product_hero .wrapper {
   width: 100%;
+  position: relative;
 }
 
-.product_hero .global_wrapper .wrapper {
+.product_hero .wrapper .top_hero {
+  padding: 4rem 2rem;
+  width: 100%;
+  margin: auto;
   background-color: #181830;
-  width: 100%;
-  max-width: 1500px;
-  margin: auto;
-  padding: 4rem 0;
 }
 
-.product_hero .global_wrapper .wrapper .product_features {
-  width: 90%;
-  margin: auto;
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .top_hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem 4rem;
+  }
 }
 
-.product_hero .global_wrapper .wrapper .product_features img {
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .top_hero .product_features {
+    width: 40%;
+  }
+}
+
+.product_hero .wrapper .top_hero .product_features img {
   width: 90px;
 }
 
-.product_hero .global_wrapper .wrapper .product_features .type {
+.product_hero .wrapper .top_hero .product_features .type {
   font-size: 3rem;
   color: white;
   font-weight: 600;
   margin: 1rem 0;
 }
 
-.product_hero .global_wrapper .wrapper .product_features p {
+.product_hero .wrapper .top_hero .product_features p {
   color: #d1d0d0;
   padding: 1rem 0;
 }
 
-.product_hero .global_wrapper .wrapper .product_features .ticket_features div {
+.product_hero .wrapper .top_hero .product_features .ticket_features div {
   padding: 1rem 0;
   color: white;
   display: -webkit-box;
@@ -60,49 +73,72 @@
   font-weight: 600;
 }
 
-.product_hero .global_wrapper .wrapper .product_features .ticket_features div svg {
+.product_hero .wrapper .top_hero .product_features .ticket_features div svg {
   color: #7f73fd;
   font-size: 1.6rem;
   margin-right: 0.7rem;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart {
+.product_hero .wrapper .top_hero .add_to_cart {
   width: 90%;
-  margin: auto;
   background-color: white;
   padding: 3rem 1.5rem;
   margin: 3rem auto;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart p {
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .top_hero .add_to_cart {
+    width: 40%;
+    height: 500px;
+    margin: 0;
+    padding: 5rem 3rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .top_hero .add_to_cart h2 {
+    font-size: 2rem;
+  }
+}
+
+.product_hero .wrapper .top_hero .add_to_cart p {
   padding: 1rem 0;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .prices {
+.product_hero .wrapper .top_hero .add_to_cart .prices {
   margin: 1rem 0;
   font-size: 1.5rem;
   font-size: bold;
   color: #15d86c;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .prices span {
+.product_hero .wrapper .top_hero .add_to_cart .prices span {
   color: #6e7191;
   margin-left: 0.5rem;
   text-decoration: line-through;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form svg {
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .top_hero .add_to_cart .prices {
+    font-size: 1.8rem;
+  }
+}
+
+.product_hero .wrapper .top_hero .add_to_cart .form svg {
   position: relative;
   left: 12rem;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form select:hover,
-.product_hero .global_wrapper .wrapper .add_to_cart .form input:hover {
+.product_hero .wrapper .top_hero .add_to_cart .form select:hover,
+.product_hero .wrapper .top_hero .add_to_cart .form input:hover {
   border: 1px solid #181830;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form select,
-.product_hero .global_wrapper .wrapper .add_to_cart .form input {
+.product_hero .wrapper .top_hero .add_to_cart .form select,
+.product_hero .wrapper .top_hero .add_to_cart .form input {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   border: 0.5px solid #e7e7e7;
@@ -111,7 +147,7 @@
   outline: none;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form select {
+.product_hero .wrapper .top_hero .add_to_cart .form select {
   padding: 1.3rem 2rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -120,12 +156,12 @@
   width: 70%;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form input {
+.product_hero .wrapper .top_hero .add_to_cart .form input {
   width: 70px;
   padding: 1.3rem;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form button {
+.product_hero .wrapper .top_hero .add_to_cart .form button {
   width: 100%;
   font-size: 1.1rem;
   padding: 1.3rem 0;
@@ -138,44 +174,54 @@
   transition: 0.3s ease-in-out;
 }
 
-.product_hero .global_wrapper .wrapper .add_to_cart .form button:hover {
+.product_hero .wrapper .top_hero .add_to_cart .form button:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   background-color: #303457;
 }
 
-.product_hero .global_wrapper .wrapper_main_description {
+.product_hero .wrapper .wrapper_main_description {
   width: 100%;
   max-width: 1500px;
   margin: auto;
+  background-color: #f6f6f6;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description {
+.product_hero .wrapper .wrapper_main_description .main_description {
   padding: 4rem 0;
   width: 90%;
   margin: auto;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description h1,
-.product_hero .global_wrapper .wrapper_main_description .main_description h2,
-.product_hero .global_wrapper .wrapper_main_description .main_description h3 {
+@media screen and (min-width: 700px) {
+  .product_hero .wrapper .wrapper_main_description .main_description {
+    text-align: center;
+    width: 700px;
+  }
+}
+
+.product_hero .wrapper .wrapper_main_description .main_description h1,
+.product_hero .wrapper .wrapper_main_description .main_description h2,
+.product_hero .wrapper .wrapper_main_description .main_description h3 {
   margin: 1rem 0;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description p {
+.product_hero .wrapper .wrapper_main_description .main_description p {
   margin-bottom: 1rem;
+  color: #6e7191;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description p strong {
+.product_hero .wrapper .wrapper_main_description .main_description p strong {
   color: #181830;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description p a {
+.product_hero .wrapper .wrapper_main_description .main_description p a {
   color: #4a3aff;
   text-decoration: unset;
 }
 
-.product_hero .global_wrapper .wrapper_main_description .main_description .ticket_benifits {
+.product_hero .wrapper .wrapper_main_description .main_description .ticket_benifits {
+  padding: 2rem 0;
   margin-left: 1rem;
 }
 /*# sourceMappingURL=product.css.map */

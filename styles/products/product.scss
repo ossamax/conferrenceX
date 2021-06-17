@@ -24,17 +24,23 @@ $headerColor: #181830;
 }
 
 .product_hero {
-  .global_wrapper {
+  .wrapper {
     width: 100%;
-    .wrapper {
-      background-color: $headerColor;
+    position: relative;
+    .top_hero {
+      padding: 4rem 2rem;
       width: 100%;
-      max-width: 1500px;
       margin: auto;
-      padding: 4rem 0;
+      background-color: $headerColor;
+      @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 4rem;
+      }
       .product_features {
-        width: 90%;
-        margin: auto;
+        @media screen and (min-width: 700px) {
+          width: 40%;
+        }
         img {
           width: 90px;
         }
@@ -65,10 +71,22 @@ $headerColor: #181830;
       }
       .add_to_cart {
         width: 90%;
-        margin: auto;
         background-color: white;
         padding: 3rem 1.5rem;
         margin: 3rem auto;
+        @media screen and (min-width: 700px) {
+          width: 40%;
+          height: 500px;
+          margin: 0;
+          padding: 5rem 3rem;
+          position: sticky;
+          top: 0;
+        }
+        h2 {
+          @media screen and (min-width: 700px) {
+            font-size: 2rem;
+          }
+        }
         p {
           padding: 1rem 0;
         }
@@ -81,6 +99,9 @@ $headerColor: #181830;
             color: $paragraphColor;
             margin-left: 0.5rem;
             text-decoration: line-through;
+          }
+          @media screen and (min-width: 700px) {
+            font-size: 1.8rem;
           }
         }
         .form {
@@ -129,15 +150,20 @@ $headerColor: #181830;
         }
       }
     }
+
     .wrapper_main_description {
       width: 100%;
       max-width: 1500px;
       margin: auto;
-
+      background-color: #f6f6f6;
       .main_description {
         padding: 4rem 0;
         width: 90%;
         margin: auto;
+        @media screen and (min-width: 700px) {
+          text-align: center;
+          width: 700px;
+        }
         h1,
         h2,
         h3 {
@@ -145,6 +171,7 @@ $headerColor: #181830;
         }
         p {
           margin-bottom: 1rem;
+          color: #6e7191;
           strong {
             color: $headerColor;
           }
@@ -154,6 +181,7 @@ $headerColor: #181830;
           }
         }
         .ticket_benifits {
+          padding: 2rem 0;
           margin-left: 1rem;
         }
       }
