@@ -8,61 +8,86 @@ const cart = [
     img: "../images/icon_tickets_1.png",
     price: "$ 49.00",
     ticket: "Standard",
+    quantity: "1",
   },
   {
     name: "Premium",
     img: "../images/icon_tickets_1.png",
     price: "$ 49.00",
     ticket: "Premium",
+    quantity: "1",
   },
   {
     name: "Deluxe",
     img: "../images/icon_tickets_1.png",
     price: "$ 49.00",
     ticket: "Deluxe",
+    quantity: "1",
   },
 ];
 
-const localData = [];
-
 document.addEventListener("DOMContentLoaded", () => {
+  const itemsWrapper = document.querySelector(".item_wrapper");
   const totalItem = document.querySelector(".total_items");
   let cartItemsNumber = 0;
-  totalItem.innerText = localStorage.length;
+  totalItem.innerText = cartItemsNumber;
+  const localData = [];
 
   btn_addTocart.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       const id = event.target.getAttribute("data-id") - 1;
       localData.push(cart[id]);
       cart[id]["Quantite"] = `${number.value}`;
-      localStorage.setItem("tickets", JSON.stringify(localData));
       cartItemsNumber++;
       totalItem.innerText = cartItemsNumber;
       document.querySelector(".add_to_cart_btn").disabled = true;
-      console.log("clicked");
+      console.log(localData);
+
+      const itemDiv = localData.map((item) => {
+        const div = `<div class="item">
+                  <div class="img">
+                    <img
+                      src=${item.img}
+                      alt="standard ticket"
+                    />
+                  </div>
+                  <div class="item_info">
+                    <div class="item_name">${item.name}</div>
+                    <div class="item_price">$${item.price}</div>
+                    <div class="item_ticket">Ticket: <span>${item.name}</span></div>
+                    <button class="btn_remove">Remove</button>
+                  </div>
+                  <div class="quantity">${item.quantity}</div>
+                </div>`;
+
+        return div;
+      });
+
+      itemsWrapper.innerHTML = itemDiv;
+      itemsWrapper.classList.remove("flex");
+      cartWrapper.classList.add("active");
+      cart_items.classList.add("active");
     });
   });
+
+  //cart items DOM
+
+  if (localData.length == 0) {
+    const noItems = document.createElement("div");
+    const p = document.createElement("p");
+    const a = document.createElement("a");
+    const btn = document.createElement("button");
+
+    noItems.classList.add("no_items_found");
+    btn.classList.add("buy_items");
+    p.innerHTML = "No items Found";
+    btn.innerHTML = "Buy Tickets";
+    a.href = "../tickets.html";
+    a.appendChild(btn);
+
+    noItems.appendChild(p);
+    noItems.appendChild(a);
+    itemsWrapper.appendChild(noItems);
+    itemsWrapper.classList.add("flex");
+  }
 });
-
-//cart items DOM
-
-const itemsWrapper = document.querySelector(".item_wrapper");
-
-if (localStorage.length == 0) {
-  const noItems = document.createElement("div");
-  const p = document.createElement("p");
-  const a = document.createElement("a");
-  const btn = document.createElement("button");
-
-  noItems.classList.add("no_items_found");
-  p.innerHTML = "No items Found";
-  btn.innerHTML = "Buy Tickets";
-  a.href = "../tickets.html";
-  a.appendChild(btn);
-
-  noItems.appendChild(p);
-  noItems.appendChild(a);
-  itemsWrapper.appendChild(noItems);
-} else {
-  
-}

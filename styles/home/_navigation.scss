@@ -224,17 +224,17 @@
           }
           .item_wrapper {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
             height: 100%;
             text-align: center;
+            padding: 2rem 1rem;
             p {
               font-size: 1.2rem;
               color: $headerColor;
               padding: 2rem 0;
             }
-            button {
+            .buy_items {
               padding: 1.5rem 3rem;
               margin: 0.4rem 0;
               border: 2px solid $headerColor;
@@ -247,6 +247,64 @@
                 transform: translateY(-3px);
               }
             }
+            .item {
+              display: flex;
+              justify-content: space-around;
+              width: 100%;
+              .img {
+                width: 25%;
+                border: 2px solid $headerColor;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .item_info {
+                width: 35%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                text-align: left;
+                div {
+                  width: 100%;
+                  padding: 0.2rem 0;
+                }
+                .item_name {
+                  color: $headerColor;
+                  font-size: 1.1rem;
+                  font-weight: bold;
+                }
+                .item_price {
+                  color: rgb(21, 216, 108);
+                }
+                .item_ticket {
+                  color: rgb(161, 160, 160);
+                  span {
+                    color: $headerColor;
+                  }
+                }
+                .btn_remove {
+                  font-size: 1rem;
+                  border-bottom: 1px solid $twitchcolor;
+                  color: $twitchcolor;
+                  cursor: pointer;
+                  margin-top: 0.3rem;
+                  transition: 0.1s ease-in-out;
+                  &:hover {
+                    opacity: 0.8;
+                  }
+                }
+              }
+              .quantity {
+                padding: 1rem 1.2rem;
+                height: 50px;
+                background-color: rgba(238, 238, 238, 0.418);
+              }
+            }
+          }
+          .flex {
+            align-items: center;
+            justify-content: center;
           }
         }
         .cart_items.active {

@@ -70,10 +70,10 @@ $headerColor: #181830;
         }
       }
       .add_to_cart {
-        width: 90%;
+        width: 100%;
         background-color: white;
         padding: 3rem 1.5rem;
-        margin: 3rem auto;
+        margin: 3rem 0;
         @media screen and (min-width: 700px) {
           width: 40%;
           height: 500px;
@@ -81,6 +81,7 @@ $headerColor: #181830;
           padding: 5rem 3rem;
           position: sticky;
           top: 0;
+          margin: 3rem auto;
         }
         h2 {
           @media screen and (min-width: 700px) {
@@ -125,7 +126,7 @@ $headerColor: #181830;
             padding: 1.3rem 2rem;
             appearance: none;
             margin-right: 0.5rem;
-            width: 70%;
+            width: 72%;
           }
 
           input {
