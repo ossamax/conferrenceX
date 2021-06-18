@@ -29,9 +29,10 @@ const cart = [
 document.addEventListener("DOMContentLoaded", () => {
   const itemsWrapper = document.querySelector(".item_wrapper");
   const totalItem = document.querySelector(".total_items");
-  let cartItemsNumber = 0;
+  const data = JSON.parse(localStorage.getItem("ticket"));
+  let cartItemsNumber = data.length;
   totalItem.innerText = cartItemsNumber;
-  const localData = [];
+  const localData = [JSON.stringify(localStorage.getItem("ticket"))];
 
   btn_addTocart.forEach((btn) => {
     btn.addEventListener("click", (event) => {
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsNumber++;
       totalItem.innerText = cartItemsNumber;
       document.querySelector(".add_to_cart_btn").disabled = true;
-      console.log(localData);
+      localStorage.setItem("ticket", JSON.stringify(localData));
 
       const itemDiv = localData.map((item) => {
         const div = `<div class="item">
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
                   <div class="item_info">
                     <div class="item_name">${item.name}</div>
-                    <div class="item_price">$${item.price}</div>
+                    <div class="item_price">${item.price}</div>
                     <div class="item_ticket">Ticket: <span>${item.name}</span></div>
                     <button class="btn_remove">Remove</button>
                   </div>
@@ -72,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //cart items DOM
 
-  if (localData.length == 0) {
+  if (localStorage.length == 0) {
     const noItems = document.createElement("div");
     const p = document.createElement("p");
     const a = document.createElement("a");
@@ -89,5 +90,32 @@ document.addEventListener("DOMContentLoaded", () => {
     noItems.appendChild(a);
     itemsWrapper.appendChild(noItems);
     itemsWrapper.classList.add("flex");
+  } else {
+    const data = JSON.parse(localStorage.getItem("ticket"));
+
+    const itemDiv = data.map((item) => {
+      const div = `<div class="item">
+                  <div class="img">
+                    <img
+                      src=${item.img}
+                      alt="standard ticket"
+                    />
+                  </div>
+                  <div class="item_info">
+                    <div class="item_name">${item.name}</div>
+                    <div class="item_price">${item.price}</div>
+                    <div class="item_ticket">Ticket: <span>${item.name}</span></div>
+                    <button class="btn_remove">Remove</button>
+                  </div>
+                  <div class="quantity">${item.quantity}</div>
+                </div>`;
+
+      return div;
+    });
+
+    itemsWrapper.innerHTML = itemDiv;
+    itemsWrapper.classList.remove("flex");
+    cartWrapper.classList.add("active");
+    cart_items.classList.add("active");
   }
 });
