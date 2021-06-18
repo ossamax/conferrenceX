@@ -30,20 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const itemsWrapper = document.querySelector(".item_wrapper");
   const totalItem = document.querySelector(".total_items");
   const data = JSON.parse(localStorage.getItem("ticket"));
-  let cartItemsNumber = data.length;
+  let cartItemsNumber =
+    localStorage.getItem("ticket") !== null ? data.length : 0;
   totalItem.innerText = cartItemsNumber;
-  const localData = [JSON.stringify(localStorage.getItem("ticket"))];
 
+  const localData = [];
+  console.log(localData);
   btn_addTocart.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       const id = event.target.getAttribute("data-id") - 1;
       localData.push(cart[id]);
-      cart[id]["Quantite"] = `${number.value}`;
-      cartItemsNumber++;
+      cartItemsNumber = 1;
       totalItem.innerText = cartItemsNumber;
-      document.querySelector(".add_to_cart_btn").disabled = true;
       localStorage.setItem("ticket", JSON.stringify(localData));
-
+      const disableBtn = document.querySelectorAll(".add_to_cart_btn");
+      disableBtn[id].disabled = true;
       const itemDiv = localData.map((item) => {
         const div = `<div class="item">
                   <div class="img">
@@ -115,7 +116,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     itemsWrapper.innerHTML = itemDiv;
     itemsWrapper.classList.remove("flex");
-    cartWrapper.classList.add("active");
-    cart_items.classList.add("active");
   }
 });
