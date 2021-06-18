@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   totalItem.innerText = cartItemsNumber;
 
   const localData = [];
-  console.log(localData);
+
   btn_addTocart.forEach((btn) => {
     btn.addEventListener("click", (event) => {
       const id = event.target.getAttribute("data-id") - 1;
@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItemsNumber = 1;
       totalItem.innerText = cartItemsNumber;
       localStorage.setItem("ticket", JSON.stringify(localData));
-      const disableBtn = document.querySelectorAll(".add_to_cart_btn");
-      disableBtn[id].disabled = true;
+
       const itemDiv = localData.map((item) => {
         const div = `<div class="item">
                   <div class="img">
