@@ -452,7 +452,13 @@ p {
           flex-direction: column;
   text-align: center;
   padding: 2rem 1rem;
-  height: 63%;
+  height: 60%;
+}
+
+@media screen and (min-width: 700px) {
+  .hero_nav nav .wrapper .cart_items_wrapper .cart_items .item_wrapper {
+    height: 63%;
+  }
 }
 
 .hero_nav nav .wrapper .cart_items_wrapper .cart_items .item_wrapper p {
