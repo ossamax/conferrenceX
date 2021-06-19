@@ -116,4 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
     itemsWrapper.innerHTML = itemDiv;
     itemsWrapper.classList.remove("flex");
   }
+
+  const checkOutBtn = document.querySelector(".checkout_button");
+  const errorDiv = document.querySelector(".error");
+
+  checkOutBtn.addEventListener("click", () => {
+    errorDiv.classList.add("active");
+  });
 });
