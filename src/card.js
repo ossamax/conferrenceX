@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="item_name">${item.name}</div>
                     <div class="item_price">${item.price}</div>
                     <div class="item_ticket">Ticket: <span>${item.name}</span></div>
-                    <button class="btn_remove">Remove</button>
+                    <button class="btn_remove" onclick="removeItem()">Remove</button>
                   </div>
                   <div class="quantity">${item.quantity}</div>
                 </div>`;
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="item_name">${item.name}</div>
                     <div class="item_price">${item.price}</div>
                     <div class="item_ticket">Ticket: <span>${item.name}</span></div>
-                    <button class="btn_remove">Remove</button>
+                    <button class="btn_remove" onclick="removeItem()">Remove</button>
                   </div>
                   <div class="quantity">${item.quantity}</div>
                 </div>`;
@@ -124,3 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
     errorDiv.classList.add("active");
   });
 });
+
+function removeItem() {
+  localStorage.removeItem("ticket");
+  window.location.reload();
+}
