@@ -13,14 +13,14 @@ const cart = [
   {
     name: "Premium",
     img: "../images/icon_tickets_1.png",
-    price: "$ 49.00",
+    price: "$ 69.00",
     ticket: "Premium",
     quantity: "1",
   },
   {
     name: "Deluxe",
     img: "../images/icon_tickets_1.png",
-    price: "$ 49.00",
+    price: "$ 99.00",
     ticket: "Deluxe",
     quantity: "1",
   },
